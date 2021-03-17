@@ -45,7 +45,7 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: 'Contacts International',
-    paragraph: 'For over 40 years, we have been the ‘home’ of overseas university applications, assisting self-funded students through the entire university application process. Our services include direct access to hundreds of our university partners, providing all the necessary information and documentation to ensure your successful application to study abroad.'
+    paragraph: 'For over 30 years, we have been the ‘home’ of overseas university applications, assisting self-funded students through the entire university application process. '
   };
 
   return (

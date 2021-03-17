@@ -7,12 +7,14 @@ import Uni from './uniPage';
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
-// Views 
+// Views
 import Home from './views/Home';
 import Aboutus from './Aboutus';
 import RecruitmentPartners from './RecruitmentPartners';
 import InstitutePartners from './InstitutePartners';
 import Events from './Events';
+import firebase from 'firebase'
+import firebaseConfig from './config'
 
 
 // Initialize Google Analytics
@@ -41,16 +43,17 @@ const App = () => {
       ref={childRef}
       children={() => (
         <Switch>
+
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-    
+
           <AppRoute exact path="/about-us" component={Aboutus} layout={LayoutDefault} />
           <AppRoute exact path="/university" component={Uni} layout={LayoutDefault} />
           <AppRoute exact path="/recruitment-partners" component={RecruitmentPartners} layout={LayoutDefault} />
-          <AppRoute exact path="/institute-partners" component={InstitutePartners} layout={LayoutDefault} />         
+          <AppRoute exact path="/institute-partners" component={InstitutePartners} layout={LayoutDefault} />
           <AppRoute exact path="/events" component={Events} layout={LayoutDefault} />
-         
-         
-         
+
+
+
         </Switch>
       )} />
   );

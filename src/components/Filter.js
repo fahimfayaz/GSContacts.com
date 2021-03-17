@@ -45,6 +45,8 @@ class Filter extends Component {
               <option value="">ALL</option>
               <option value="Australia">Australia</option>
               <option value="Canada">Canada</option>
+              <option value="U.K.">U.K.</option>
+              <option value="Cyprus">Cyprus</option>
               {/* <option value="m">M</option>
               <option value="l">L</option>
               <option value="xl">XL</option>

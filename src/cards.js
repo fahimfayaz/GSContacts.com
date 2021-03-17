@@ -1,11 +1,21 @@
 import React from "react";
-
+import Image from "./components/elements/Image";
 import "./cards.scss";
+import qslogo from './assets/images/qs-logo.png'
+import thelogo from './assets/images/the-logo.png'
 // window.React = React
 class CardHeader extends React.Component {
   render() {
     const { image } = this.props;
     var style = {
+      marginTop: "20px",
+      marginBottom: "20px",
+      paddingLeft: "20px",
+      paddingRight: "20px",
+      backgroundColor: "white",
+      backgroundSize: "contain",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center top",
       backgroundImage: "url(" + image + ")",
     };
     return (
@@ -30,27 +40,52 @@ class CardBody extends React.Component {
   render() {
     return (
       <div className="card-body">
-        <p className="date"></p>
-
-        <h4 className="uni-title">{this.props.title}</h4>
+        <div className="forehead">
+          <div className="uni-title">{this.props.title}</div>
+          <i class="fa fa-star"></i>
+          <div className="ranking">Ranking : {this.props.ranking}</div>
+        </div>
 
         <div className="cost-li">
-<ul className="list" >
-        <li>UG Fee : {this.props.ugFee}</li>
-        <li>PG Fee : {this.props.pgFee}</li>
-        <li>diploma Fee : {this.props.diplomaFee}</li>
-</ul>
-                </div>
-   <div className="instabox-foot">     
-       <ul className="list sems">
-       <li>Semester Start :{this.props.semesterStart1}</li>
-        <li>Semester Start :{this.props.semesterStart2}</li>
-         </ul>
+          <ul className="list">
+            <li>
+              
+              <div className="ranking">
+              <img
+                  src={qslogo}
+                  width={17}
+                  height={17}
+                  className="img"
+                />
+                Ranking : {this.props.ranking}
+              </div>
+              <div className="ranking">
+                
+              <img
+                  src={thelogo}
+                  width={17}
+                  height={17}
+                  className="img"
+                />
         
-        <p>Accomodation cost : {this.props.AcommodationCost}</p>
-        <p>Ranking : {this.props.ranking}</p>
-        <p>{this.props.text}</p>
-    </div>
+                Ranking : {this.props.ranking}
+              </div>
+            </li>
+            <li>Average Annual UG Fee : ${this.props.ugFee}</li>
+            <li>Average Annual PG Fee : ${this.props.pgFee}</li>
+            <li>diploma Fee : {this.props.diplomaFee}</li>
+          </ul>
+        </div>
+        <div className="instabox-foot">
+          <ul className="list sems">
+            <li>Semester Start :{this.props.semesterStart1}</li>
+            <li>Semester Start :{this.props.semesterStart2}</li>
+          </ul>
+
+          <p>Accomodation cost : {this.props.AcommodationCost}</p>
+
+          <p>{this.props.text}</p>
+        </div>
         <Button />
       </div>
     );

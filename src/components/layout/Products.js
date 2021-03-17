@@ -5,6 +5,8 @@ import util from "../util";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
 import Card from "../cards"
+import useFirestore from '../hooks/useFirestore';
+import Uni from '../uniFirebase'
 class Products extends Component {
   componentDidMount() {
     this.props.fetchProducts();

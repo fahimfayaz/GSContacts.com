@@ -2,7 +2,7 @@
 $blue: #341cac;
 
 body, html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open-Sans', sans-serif;
   background-color: white!important;
 }
 
@@ -17,7 +17,7 @@ box-sizing:inherit;
   
   &:hover {
     box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
-    cursor: pointer;
+    cursor: pointer; 
     
     .button-primary {
       transform: translate(10px, 0);
@@ -82,6 +82,16 @@ text-align:center;
 }
 .uni-title{
   color:#6163ff!important;
+  font-size:15px!important;
+  padding-bottom: 4px;
+}
+.forehead{
+  padding:15px;
+}
+.ranking{
+  font-size:10px;
+  margin-top: 10px;
+padding:2px;
 }
 .list{
   list-style-type:none;
@@ -121,11 +131,16 @@ text-align:center;
 .designer-link {
   color:#fff;
   text-align:center;
-  fon-size: 12px;
+  font-size: 12px;
   text-decoration: none;
   display:block;
 }
 
 .cont{
   display:table
+}
+
+.img{
+display:inline;
+padding-right:2px;
 }
