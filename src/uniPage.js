@@ -7,12 +7,26 @@ import store from "./store";
 import "./uniPage.css";
 import Hero from "./components/sections/HeroUni.js"
 import Copyright from "./components/Copyright";
-
+import HeroCarousel from "react-hero-carousel";
 class Uni extends Component {
   render() {
     return (
       <>
-      <Hero/>
+        <div className="HeroCarousel">
+   <HeroCarousel >
+     <img
+      style={{
+        width: "100%",
+        height: "500px",
+        objectFit: "cover",
+      }}
+      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png"
+      width="100%"
+      height="500px"
+    />
+    
+  </HeroCarousel>
+  </div>
       <Provider store={store}>
         <div className="container">
          
@@ -24,6 +38,7 @@ class Uni extends Component {
             
             <div className="col-md-9">
             <div className="justify-content-center section"> 
+            <div className="padding"></div>
             <div className="justify-content-center"><Products /></div>
               
             </div>

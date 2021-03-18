@@ -1,10 +1,11 @@
 import React from 'react';
-import Header from '../components/layout/Header';
+import NavMenu from '../components/layout/Navbar';
 import FooterReal from '../components/layout/FooterReal.js'
-
+import Demo from '../components/layout/Navbar'
 const LayoutDefault = ({ children }) => (
   <>
-    <Header navPosition="right" className="reveal-from-bottom" />
+<NavMenu/>
+    {/* <Header navPosition="right" className="reveal-from-bottom" /> */}
     <main className="site-content">
       {children}
     </main>

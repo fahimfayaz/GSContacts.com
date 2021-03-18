@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import util from "../util";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
-import Card from "../cards"
+import Card from "../cardsInstitutes"
 class Products extends Component {
   componentDidMount() {
     this.props.fetchProducts();
@@ -20,7 +20,7 @@ class Products extends Component {
           </div>
       <div className="split-item-content card-padding fw-600 tt-u mb-8" key={product.id}>
        
-       <Card image={`products/${product.sku}_2.jpg`} title={product.title} text={product.title} />
+       <Card image={product.Picture} title={product.title} text={product.title} />
         {/* <div className="thumbnail text-center">
           <a
             href={`#${product.id}`} 
