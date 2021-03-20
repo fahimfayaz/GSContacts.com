@@ -35,7 +35,7 @@ box-sizing:inherit;
     transition: .25s;
     
     &:hover {
-      box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
+      box-shadow: 3px 2px 20px 10px darken(#341cac, 10%)!important;
       cursor: pointer;
       
       .button-primary {

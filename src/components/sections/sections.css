@@ -1,0 +1,9 @@
+.select-country{
+    margin-top:5px!important;
+    margin-bottom:0px!important;
+    font-size:30px;
+}
+.right-button{
+    position: absolute;
+    right:0;
+}

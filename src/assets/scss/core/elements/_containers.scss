@@ -15,6 +15,7 @@
 .container {
 
 max-width: $container--width + ( $container--padding__desktop * 3 );
+z-index:100!important;
 }
 
 .container-sm {

@@ -18,7 +18,9 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
-  
+  .padding-top{
+    padding-top:16%;
+  }
   .App-link {
     color: #61dafb;
   }
