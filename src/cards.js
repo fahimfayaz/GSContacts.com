@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "./components/elements/Image";
 import "./cards.scss";
-import qslogo from './assets/images/qs-logo.png'
-import thelogo from './assets/images/the-logo.png'
+import qslogo from "./assets/images/qs-logo.png";
+import thelogo from "./assets/images/the-logo.png";
 // window.React = React
 class CardHeader extends React.Component {
   render() {
@@ -45,45 +45,28 @@ class CardBody extends React.Component {
           <i class="fa fa-star"></i>
           <div className="ranking">Ranking : {this.props.ranking}</div>
         </div>
-
         <div className="cost-li">
           <ul className="list">
             <li>
-              
               <div className="ranking">
-              <img
-                  src={qslogo}
-                  width={17}
-                  height={17}
-                  className="img"
-                />
+                <img src={qslogo} width={17} height={17} className="img" />
                 Ranking : {this.props.ranking}
               </div>
               <div className="ranking">
-                
-              <img
-                  src={thelogo}
-                  width={17}
-                  height={17}
-                  className="img"
-                />
-        
+                <img src={thelogo} width={17} height={17} className="img" />
                 Ranking : {this.props.ranking}
               </div>
             </li>
-            <li>Average Annual UG Fee : ${this.props.ugFee}</li>
-            <li>Average Annual PG Fee : ${this.props.pgFee}</li>
-            <li>diploma Fee : {this.props.diplomaFee}</li>
+            <li className="list sems">Average Annual UG Fee : ${this.props.ugFee}</li>
+            <li className="list sems">Average Annual PG Fee : ${this.props.pgFee}</li>
+            <li className="list sems">diploma Fee : {this.props.diplomaFee}</li>
           </ul>
         </div>
         <div className="instabox-foot">
           <ul className="list sems">
-            <li>Semester Start :{this.props.semesterStart1}</li>
-            <li>Semester Start :{this.props.semesterStart2}</li>
+            <li>Semester Start :{this.props.semesterStart1}, {this.props.semesterStart2}</li>
           </ul>
-
-          <p>Accomodation cost : {this.props.AcommodationCost}</p>
-
+          <p className="list sems">Accomodation cost : {this.props.AcommodationCost}</p>
           <p>{this.props.text}</p>
         </div>
         <Button />

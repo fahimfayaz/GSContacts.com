@@ -16,6 +16,7 @@ import Events from './Events';
 import firebase from 'firebase'
 import firebaseConfig from './config'
 
+import UniCountry from './uniPage';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -51,6 +52,7 @@ const App = () => {
           <AppRoute exact path="/recruitment-partners" component={RecruitmentPartners} layout={LayoutDefault} />
           <AppRoute exact path="/institute-partners" component={InstitutePartners} layout={LayoutDefault} />
           <AppRoute exact path="/events" component={Events} layout={LayoutDefault} />
+          <AppRoute exact path={'/university/:country'} component={Events} layout={LayoutDefault} />
 
 
 

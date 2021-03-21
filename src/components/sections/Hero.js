@@ -5,7 +5,7 @@ import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
 import Image from "../elements/Image";
 import Modal from "../elements/Modal";
-
+import "./sections.css"
 const propTypes = {
   ...SectionProps.types,
 };
@@ -83,7 +83,16 @@ const Hero = ({
                     wideMobile
                     href="/university"
                   >
-                    Get started
+                    Book an Appointment
+                  </Button>
+                  <Button
+                    tag="a"
+                    color="primary"
+                    wideMobile
+                    href="/university"
+                    className="button"
+                  >
+                   Apply Now
                   </Button>
                   {/* <Button
                     tag="a"

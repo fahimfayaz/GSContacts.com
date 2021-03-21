@@ -1,11 +1,21 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import "./dropdown.css";
-import React, { useState, useRef, useEffect } from "react";
+import React,  {Component, useState, useRef, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Nav from "react-bootstrap/Nav";
 import Logo from "./partials/Logo";
+// class NavMenu extends Component{
 
+// render(){
+
+//   const [show, setShow] = useState(false);
+// const showDropdown = (e)=>{
+//     setShow(!show);
+// }
+// const hideDropdown = e => {
+//     setShow(false);
+// }
 const NavMenu = () => {
   return (
     <>
@@ -17,6 +27,9 @@ const NavMenu = () => {
         variant="light"
         sticky="top"
         fixedTop
+        // show={show}
+        // onMouseEnter={showDropdown} 
+        // onMouseLeave={hideDropdown}
       >
         <Navbar.Brand href="/">
           <Logo />
@@ -30,15 +43,19 @@ const NavMenu = () => {
             <NavDropdown title="Study Abroad" id="collapsible-nav-dropdown">
               <span >
               <NavDropdown.Item className="dropdown-box" href="/university">
-                Find Universities
+              Study in Canada
+                
               </NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-box" href="#action/3.2">Services</NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-box" href="#action/3.3">
-                Find Countries
+              <NavDropdown.Item className="dropdown-box" href="/university">Services</NavDropdown.Item>
+              <NavDropdown.Item className="dropdown-box" href="/university">
+                Study in U.K.
               </NavDropdown.Item>
 
-              <NavDropdown.Item className="dropdown-box" href="#action/3.4">
-                Scholarship Opportunities
+              <NavDropdown.Item className="dropdown-box" href="/university">
+              Study in Australia
+              </NavDropdown.Item>
+              <NavDropdown.Item className="dropdown-box" href="/university">
+              Study in Cyprus
               </NavDropdown.Item>
 
               </span>
@@ -61,5 +78,7 @@ const NavMenu = () => {
     </>
   );
 };
+// }
+// }
 
 export default NavMenu;
