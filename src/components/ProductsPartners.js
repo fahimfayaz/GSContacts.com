@@ -7,7 +7,8 @@ import { fetchProducts } from "../actions/productActions";
 import Card from "../cardsInstitutes"
 class Products extends Component {
   componentDidMount() {
-    this.props.fetchProducts();
+    var country = "all"
+    this.props.fetchProducts(country);
   }
   render() {
     const productItems = this.props.products.map((product) => (

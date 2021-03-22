@@ -27,8 +27,8 @@ class Products extends Component {
 //   }
   componentDidMount() { 
 
-    
-    this.props.fetchProducts();
+    var country = "all"
+    this.props.fetchProducts(country);
   }
  
   render() {
@@ -37,7 +37,7 @@ class Products extends Component {
     //  const productItems = blogs.map((product) => (
       <div className="split-item-content fw-600 tt-u mb-8" >
 
-      <Uni/>
+      
           <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
 
           </div>

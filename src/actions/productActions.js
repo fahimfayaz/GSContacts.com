@@ -4,17 +4,85 @@ import {
   ORDER_PRODUCTS_BY_PRICE,
 } from "./types";
 
-export const fetchProducts = () => (dispatch) => {
-  fetch("http://localhost:8000/products")
+// export const fetchProducts = () => (dispatch) => {
+//   fetch("http://localhost:8000/products")
+//     .then((res) => res.json())
+//     .catch((err) =>
+//       fetch("db.json")
+//         .then((res) => res.json())
+//         .then((data) => data.products)
+//     )
+//     .then((data) => {
+//       dispatch({ type: FETCH_PRODUCTS, payload: data });
+//     });
+// };
+
+export const fetchProducts = (country) => (dispatch) => {
+  if(country=="canada"){
+    fetch("http://localhost:8000/products")
     .then((res) => res.json())
     .catch((err) =>
-      fetch("db.json")
+      fetch("dbCanada.json")
         .then((res) => res.json())
         .then((data) => data.products)
     )
     .then((data) => {
       dispatch({ type: FETCH_PRODUCTS, payload: data });
     });
+  }
+  else if (country=="uk"){
+    fetch("http://localhost:8000/products")
+    .then((res) => res.json())
+    .catch((err) =>
+      fetch("dbUK.json")
+        .then((res) => res.json())
+        .then((data) => data.products)
+    )
+    .then((data) => {
+      dispatch({ type: FETCH_PRODUCTS, payload: data });
+    });
+
+  }
+else if (country =="australia"){
+  fetch("http://localhost:8000/products")
+    .then((res) => res.json())
+    .catch((err) =>
+      fetch("dbAustralia.json")
+        .then((res) => res.json())
+        .then((data) => data.products)
+    )
+    .then((data) => {
+      dispatch({ type: FETCH_PRODUCTS, payload: data });
+    });
+
+}
+else if(country== "cyprus"){
+  fetch("http://localhost:8000/products")
+  .then((res) => res.json())
+  .catch((err) =>
+    fetch("dbCyprus.json")
+      .then((res) => res.json())
+      .then((data) => data.products)
+  )
+  .then((data) => {
+    dispatch({ type: FETCH_PRODUCTS, payload: data });
+  });
+  
+}
+else{
+  fetch("http://localhost:8000/products")
+  .then((res) => res.json())
+  .catch((err) =>
+    fetch("db.json")
+      .then((res) => res.json())
+      .then((data) => data.products)
+  )
+  .then((data) => {
+    dispatch({ type: FETCH_PRODUCTS, payload: data });
+  });
+  
+}
+
 };
 
 export const filterProducts = (products, size) => (dispatch) => {

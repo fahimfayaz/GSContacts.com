@@ -1,6 +1,6 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import "./dropdown.css";
-import React,  {Component, useState, useRef, useEffect } from "react";
+import React, { Component, useState, useRef, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Nav from "react-bootstrap/Nav";
@@ -28,7 +28,7 @@ const NavMenu = () => {
         sticky="top"
         fixedTop
         // show={show}
-        // onMouseEnter={showDropdown} 
+        // onMouseEnter={showDropdown}
         // onMouseLeave={hideDropdown}
       >
         <Navbar.Brand href="/">
@@ -41,30 +41,40 @@ const NavMenu = () => {
             <Nav.Link href="/about-us">About Us</Nav.Link>
 
             <NavDropdown title="Study Abroad" id="collapsible-nav-dropdown">
-              <span >
-              <NavDropdown.Item className="dropdown-box" href="/university">
-              Study in Canada
+              <span>
+                <NavDropdown.Item className="dropdown-box" href="/canada">
+                  Study in Canada
+                </NavDropdown.Item>
                 
-              </NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-box" href="/university">Services</NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-box" href="/university">
-                Study in U.K.
-              </NavDropdown.Item>
+                <NavDropdown.Item className="dropdown-box" href="/uk">
+                  Study in U.K.
+                </NavDropdown.Item>
 
-              <NavDropdown.Item className="dropdown-box" href="/university">
-              Study in Australia
-              </NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-box" href="/university">
-              Study in Cyprus
-              </NavDropdown.Item>
-
+                <NavDropdown.Item className="dropdown-box" href="/australia">
+                  Study in Australia
+                </NavDropdown.Item>
+                <NavDropdown.Item className="dropdown-box" href="/cyprus">
+                  Study in Cyprus
+                </NavDropdown.Item>
               </span>
-              
             </NavDropdown>
-            <Nav.Link href="/recruitment-partners">
-              Recruitment Partners
-            </Nav.Link>
-            <Nav.Link href="/institute-partners">Institute Partners</Nav.Link>
+            <NavDropdown title="Services" id="collapsible-nav-dropdown">
+              <span>
+                <NavDropdown.Item className="dropdown-box" href="/recruitment-partners">
+                  Recruitment Partners
+                </NavDropdown.Item>
+                
+                <NavDropdown.Item className="dropdown-box" href="/institute-partners">
+                  Institute Partners
+                </NavDropdown.Item>
+
+                <NavDropdown.Item className="dropdown-box" href="/students">
+                  Students
+                </NavDropdown.Item>
+             
+              </span>
+            </NavDropdown>
+       
             <Nav.Link href="/events">Events</Nav.Link>
           </Nav>
           <Nav>

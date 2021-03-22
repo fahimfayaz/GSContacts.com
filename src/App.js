@@ -4,6 +4,7 @@ import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
 import Uni from './uniPage';
+import UniCountry from './UniAustralia';
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
@@ -15,8 +16,11 @@ import InstitutePartners from './InstitutePartners';
 import Events from './Events';
 import firebase from 'firebase'
 import firebaseConfig from './config'
-
-import UniCountry from './uniPage';
+import UniCanada from './UniCanada';
+import UniUK from './UniUK';
+import UniAustralia from './UniAustralia';
+import UniCyprus from './UniCyprus';
+import StudentServices from './StudentServices'
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -51,11 +55,12 @@ const App = () => {
           <AppRoute exact path="/university" component={Uni} layout={LayoutDefault} />
           <AppRoute exact path="/recruitment-partners" component={RecruitmentPartners} layout={LayoutDefault} />
           <AppRoute exact path="/institute-partners" component={InstitutePartners} layout={LayoutDefault} />
+          <AppRoute exact path="/students" component={StudentServices} layout={LayoutDefault} />
           <AppRoute exact path="/events" component={Events} layout={LayoutDefault} />
-          <AppRoute exact path={'/university/:country'} component={Events} layout={LayoutDefault} />
-
-
-
+           <AppRoute exact path="/canada" component={UniCanada} layout={LayoutDefault} />
+          <AppRoute exact path={'/uk'} component={UniUK} layout={LayoutDefault} />
+          <AppRoute exact path={'/australia'} component={UniAustralia} layout={LayoutDefault} />
+          <AppRoute exact path={'/cyprus'} component={UniCyprus} layout={LayoutDefault} /> 
         </Switch>
       )} />
   );

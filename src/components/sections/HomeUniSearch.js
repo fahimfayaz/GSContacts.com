@@ -5,8 +5,19 @@ import './sections.css'
 import { Link } from "react-router-dom";
 
 class HomeUniSearch extends Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      value: ''
+    };
+  }
+  handleChange = event => {
+    const { value } = event.target;
+    this.setState({ value });
+  };
 render (){
-    
+  const { data, value } = this.state;
 return(
 <>
 

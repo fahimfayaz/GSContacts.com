@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { filterProducts, sortProducts } from "../actions/productActions";
-import "./components.css"
+import "./components.css";
 class Filter extends Component {
   render() {
     return (
@@ -20,7 +20,7 @@ class Filter extends Component {
                     event.target.value
                   );
                 }}
-              >
+              >  
                 <option value="">Select</option>
                 <option value="lowestprice">Lowest to highest</option>
                 <option value="highestprice">Highest to lowest</option>
@@ -30,7 +30,7 @@ class Filter extends Component {
           <div className="card-padding">
             <label>
               {" "}
-              <div className="select-country" >Filter Countries</div>
+              <div className="select-country">Filter Countries</div>
               <select
                 className="form-control"
                 value={this.props.size}

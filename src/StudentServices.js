@@ -10,7 +10,7 @@ import Copyright from "./components/Copyright";
 import FeaturesTiles from "./components/sections/FeaturesTilesAboutus";
 import FeaturesSplit from "./components/sections/FeaturesSplitAboutus";
 import HeroCarousel from "react-hero-carousel";
-class Events extends Component {
+class StudentServices extends Component {
   render() {
     return (
       <>
@@ -19,10 +19,10 @@ class Events extends Component {
      <img
       style={{
         width: "100%",
-        height: "500px",
+        height: "50%",
         objectFit: "cover",
-      }}
-      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png"
+      }} 
+      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/c_scale,w_1924/v1616421061/student-services_bmpxs5.jpg"
       width="100%"
       height="500px"
     />
@@ -49,4 +49,4 @@ class Events extends Component {
   }
 }
 
-export default Events;
+export default StudentServices;

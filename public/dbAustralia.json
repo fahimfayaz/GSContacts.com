@@ -1,0 +1,107 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "sku": 18644119330491312,
+      "title": "Australian Institute of Higher Education",
+      "description": "Sphynx Tie Dye Grey",
+      "availableSizes": ["AUSTRALIA", "L", "XL", "XXL"],
+      "ugFee":10000,
+      "pgFee":20000,
+      "diplomaFee":9000,
+      "semesterStart1":"4th Feb",
+      "semesterStart2":"4th July",
+      "AcommodationCost":2000,
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615966378/logo_color_nilgnr.png",
+
+      "price": 3.4,
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 2,
+      "sku": 11854078013954528,
+      "title": "Goldcoast Institute of Tafe",
+      "description": "Danger Knife Grey",
+      "availableSizes": ["AUSTRALIA", "M", "L"],
+      "ugFee":10000,
+      "pgFee":20000,
+      "diplomaFee":9000,
+      "semesterStart1":"4th Feb",
+      "semesterStart2":"4th July",
+      "AcommodationCost":2000,
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/23796-bt11ew.0t75_uo0hma.webp",
+      "price": 5.5,
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 3,
+      "sku": 876661122392077,
+      "title": "Swinburne University",
+      "description": "White DGK Script",
+      "availableSizes": ["AUSTRALIA", "M", "L"],
+      "ugFee":10000,
+      "pgFee":20000,
+      "diplomaFee":9000,
+      "semesterStart1":"4th Feb",
+      "semesterStart2":"4th July",
+      "AcommodationCost":2000,
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985560/logo-long-full-keyline_w3q1by.webp",
+      "price": 6.6,
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 4,
+      "sku": 9197907543445677,
+      "title": "Victoria University Sydney",
+      "description": "Born On The Streets",
+      "availableSizes": ["AUSTRALIA"],
+      "ugFee":10000,
+      "pgFee":20000,
+      "diplomaFee":9000,
+      "semesterStart1":"4th Feb",
+      "semesterStart2":"4th July",
+      "AcommodationCost":2000,
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985560/logo-mobile_szbve1.webp",
+      "price": 7.7,
+      "isFreeShipping": false
+    },
+
+    {
+      "id": 5,
+      "sku": 10547961582846888,
+      "title": "Collarts",
+      "description": "Tso 3D Short Sleeve",
+      "availableSizes": ["AUSTRALIA", "L", "XL"],
+      "ugFee":10000,
+      "pgFee":20000,
+      "diplomaFee":9000,
+      "semesterStart1":"4th Feb",
+      "semesterStart2":"4th July",
+      "AcommodationCost":2000,
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/ezgif.com-gif-maker_bcybt4.webp",
+      "price": 6.5,
+      "isFreeShipping": false
+    },
+
+    {
+      "id": 6,
+      "sku": 6090484789343891,
+      "title": "Lakehead University",
+      "description": "Man Tie Dye Cinza Grey",
+      "availableSizes": ["AUSTRALIA"],
+      "ugFee":10000,
+      "pgFee":20000,
+      "diplomaFee":9000,
+      "semesterStart1":"4th Feb",
+      "semesterStart2":"4th July",
+      "AcommodationCost":2000,
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985559/lakeheadLogo_prjssq.webp",
+      "price": 5.4,
+      "isFreeShipping": false
+    }
+
+  ]
+}
