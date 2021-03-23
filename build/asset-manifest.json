@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "./static/css/main.aeac903c.chunk.css",
-    "main.js": "./static/js/main.c4b20843.chunk.js",
-    "main.js.map": "./static/js/main.c4b20843.chunk.js.map",
+    "main.js": "./static/js/main.53ad51d1.chunk.js",
+    "main.js.map": "./static/js/main.53ad51d1.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.2e1ff532.js",
     "runtime-main.js.map": "./static/js/runtime-main.2e1ff532.js.map",
     "static/css/2.902ab121.chunk.css": "./static/css/2.902ab121.chunk.css",
-    "static/js/2.1b3d1b1c.chunk.js": "./static/js/2.1b3d1b1c.chunk.js",
-    "static/js/2.1b3d1b1c.chunk.js.map": "./static/js/2.1b3d1b1c.chunk.js.map",
+    "static/js/2.edb80efd.chunk.js": "./static/js/2.edb80efd.chunk.js",
+    "static/js/2.edb80efd.chunk.js.map": "./static/js/2.edb80efd.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.a1852ebe8e5f02d59028b015784e681e.js": "./precache-manifest.a1852ebe8e5f02d59028b015784e681e.js",
+    "precache-manifest.56b5a599e7ed82aefdc456b9249f9d67.js": "./precache-manifest.56b5a599e7ed82aefdc456b9249f9d67.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.902ab121.chunk.css.map": "./static/css/2.902ab121.chunk.css.map",
     "static/css/main.aeac903c.chunk.css.map": "./static/css/main.aeac903c.chunk.css.map",
-    "static/js/2.1b3d1b1c.chunk.js.LICENSE.txt": "./static/js/2.1b3d1b1c.chunk.js.LICENSE.txt",
+    "static/js/2.edb80efd.chunk.js.LICENSE.txt": "./static/js/2.edb80efd.chunk.js.LICENSE.txt",
     "static/media/call.png": "./static/media/call.b49c63d7.png",
     "static/media/style.scss": "./static/media/illustration-section-02.63d0555d.svg",
     "static/media/feature-tile-icon-01.svg": "./static/media/feature-tile-icon-01.0f9928d7.svg",
     "static/media/feature-tile-icon-02.svg": "./static/media/feature-tile-icon-02.bd39f304.svg",
     "static/media/feature-tile-icon-03.svg": "./static/media/feature-tile-icon-03.66f37ba5.svg",
-    "static/media/features-split-image-01.png": "./static/media/features-split-image-01.d9cb99ce.png",
+    "static/media/features-split-image-01.png": "./static/media/features-split-image-01.f68514b7.png",
     "static/media/features-split-image-02.png": "./static/media/features-split-image-02.3c569239.png",
     "static/media/logo.png": "./static/media/logo.68078f0d.png",
     "static/media/student.svg": "./static/media/student.1f37bc25.svg",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.2e1ff532.js",
     "static/css/2.902ab121.chunk.css",
-    "static/js/2.1b3d1b1c.chunk.js",
+    "static/js/2.edb80efd.chunk.js",
     "static/css/main.aeac903c.chunk.css",
-    "static/js/main.c4b20843.chunk.js"
+    "static/js/main.53ad51d1.chunk.js"
   ]
 }

@@ -62,19 +62,18 @@ const NavMenu = () => {
 
             <NavDropdown className={style1.ani_link} title="Study Abroad" id="collapsible-nav-dropdown">
               <span >
-              <NavDropdown.Item className="dropdown-box" href="/university">
+              <NavDropdown.Item className="dropdown-box" href="/canada">
               Study in Canada
                 
               </NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-box" href="/university">Services</NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-box" href="/university">
+              <NavDropdown.Item className="dropdown-box" href="/uk">
                 Study in U.K.
               </NavDropdown.Item>
 
-              <NavDropdown.Item className="dropdown-box" href="/university">
+              <NavDropdown.Item className="dropdown-box" href="/australia">
               Study in Australia
               </NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-box" href="/university">
+              <NavDropdown.Item className="dropdown-box" href="/cyprus">
               Study in Cyprus
               </NavDropdown.Item>
 
