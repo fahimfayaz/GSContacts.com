@@ -15,8 +15,8 @@ import SectionHeader from './components/sections/partials/SectionHeader';
 class UniUK extends Component {
   render() {
     const sectionHeader = {
-      title: 'Contacts International',
-      paragraph: 'For over 30 years, we have been the ‘home’ of overseas university applications, assisting self-funded students through the entire university application process. '
+      title: 'Study in UK',
+      paragraph: ' '
     };
   
     return (
@@ -26,10 +26,10 @@ class UniUK extends Component {
      <img
       style={{
         width: "100%",
-        height: "50%",
+        height: "70%",
         objectFit: "cover",
       }}
-      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616419942/uk_jzfmyy.jpg"
+      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png"
       width="100%"
       height="500px"
     />
@@ -40,7 +40,10 @@ class UniUK extends Component {
         <div className="container">
          
        
-        <SectionHeader data={sectionHeader} className="padding-top-section-header center-content" />
+        <div id = "overlay">  
+  <SectionHeader data={sectionHeader} className="padding-top-section-header center-content" />
+      
+  </div>
          
            <ProductsUK/>
          

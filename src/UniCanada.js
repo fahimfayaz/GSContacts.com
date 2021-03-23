@@ -15,8 +15,8 @@ import SectionHeader from './components/sections/partials/SectionHeader';
 class UniCanada extends Component {
   render() {
     const sectionHeader = {
-      title: 'Contacts International',
-      paragraph: 'For over 30 years, we have been the ‘home’ of overseas university applications, assisting self-funded students through the entire university application process. '
+      title: 'Study in Canada',
+      paragraph: ' '
     };
   
     return (
@@ -26,10 +26,10 @@ class UniCanada extends Component {
      <img
       style={{
         width: "100%",
-        height: "50%",
+        height: "70%",
         objectFit: "cover",
       }}
-      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616409800/canada_banner_ix3cmc.jpg"
+      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png"
       width="100%"
       height="500px"
     />
@@ -42,7 +42,10 @@ class UniCanada extends Component {
         <div className="padding-top container">
          
        
-        <SectionHeader data={sectionHeader} className="padding-top-section-header center-content" />
+        <div id = "overlay">  
+  <SectionHeader data={sectionHeader} className="padding-top-section-header center-content" />
+      
+  </div>
          
            <Products/>
          
