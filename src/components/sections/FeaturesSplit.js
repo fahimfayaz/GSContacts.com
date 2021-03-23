@@ -51,7 +51,7 @@ const FeaturesSplit = ({
   const sectionHeader = {
     title: "Why Choose Contacts International?",
     paragraph:
-      "WE DO NOT SELL COMMODITIES, WE LAY THE FOUNDATIONS FOR YOUR ACADEMIC FUTURE!                     Global Education empowers prospective students with all the knowledge required of them to begin their studies in a new country with ease and confidence. Our services are professional and personal; the services offered by Global Education include individual counselling, student advice, University/ College applications, accommodation and visa assistance . Our offices are IELTS booking centres, and we are also registered UCAS centre for all UK university applications. ",
+      "WE DO NOT SELL COMMODITIES, WE LAY THE FOUNDATIONS FOR YOUR ACADEMIC FUTURE!                     Contacts International empowers prospective students with all the knowledge required of them to begin their studies in a new country with ease and confidence.  ",
   };
 
   return (

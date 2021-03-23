@@ -1,7 +1,7 @@
 import React from 'react';
-import NavMenu from '../components/layout/Navbar';
+import NavMenu from '../components/layout/Navbar2';
 import FooterReal from '../components/layout/FooterReal.js'
-import Demo from '../components/layout/Navbar'
+
 const LayoutDefault = ({ children }) => (
   <>
 <NavMenu/>

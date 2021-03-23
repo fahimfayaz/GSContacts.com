@@ -55,7 +55,7 @@ const FeaturesTiles = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          <SectionHeader data={sectionHeader} className="padding-top center-content" />
           <div className={tilesClasses}>
 
             <div className="tiles-item reveal-from-bottom">
@@ -63,7 +63,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                      src={require('./../../assets/images/call.png')}
                       alt="Features tile icon 01"
                       width={64}
                       height={64} />
@@ -71,10 +71,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="text-color-primary mt-0 mb-8">
-                  University Admissions
+                 Agents
                     </h4>
                   <p className="m-0 text-sm">
-                  Assisting with admissions and placement at international universities.
+                  Diversify your campus by attracting qualified students from countries around the world.
                     </p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
+                      src={require('./../../assets/images/student.svg')}
                       alt="Features tile icon 02"
                       width={64}
                       height={64} />
@@ -93,10 +93,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className=" text-color-primary mt-0 mb-8">
-                  Webinar Events
+                  Students 
                     </h4>
                   <p className="m-0 text-sm">
-                  Meet representatives directly from top International Universities
+                  Get matched and apply to programs and schools that align with your background, skills, and interests.
                     </p>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
+                      src={require('./../../assets/images/university.png')}
                       alt="Features tile icon 03"
                       width={64}
                       height={64} />
@@ -115,11 +115,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className=" text-color-primary mt-0 mb-8">
-                  Application Advice
+                  Institutes
                     </h4>
                   <p className="m-0 text-sm">
-                  We assist you with the entire
-application process from start to finish
+                  Give your students the best chance for success with access to 1,500+ educational institutions.
                     </p>
                 </div>
               </div>

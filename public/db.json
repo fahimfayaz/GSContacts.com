@@ -30,7 +30,7 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/23796-bt11ew.0t75_uo0hma.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452957/23796-bt11ew.0t75_yzwrjd.webp",
       "price": 5.5,
       "isFreeShipping": true
     },
@@ -47,7 +47,7 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985560/logo-long-full-keyline_w3q1by.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452959/logo-long-full-keyline_ud6waf.webp",
       "price": 6.6,
       "isFreeShipping": true
     },
@@ -64,7 +64,7 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985560/logo-mobile_szbve1.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452959/logo-mobile_kgjbpe.webp",
       "price": 7.7,
       "isFreeShipping": false
     },
@@ -81,7 +81,7 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/ezgif.com-gif-maker_bcybt4.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452957/ezgif.com-gif-maker_dzyroi.webp",
       "price": 6.5,
       "isFreeShipping": false
     },
@@ -98,11 +98,10 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985559/lakeheadLogo_prjssq.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452958/lakeheadLogo_rsobiy.webp",
       "price": 5.4,
       "isFreeShipping": false
     },
-
     {
       "id": 7,
       "sku": 18532669286405342,
@@ -116,7 +115,7 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/canada_west_avxgov.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452957/canada_west_fuijda.webp",
       "price": 4.3,
       "isFreeShipping": true
     },
@@ -134,7 +133,7 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985559/logo_3_ck5he4.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616453995/kpu_ywfyqn.webp",
       "price": 3.0,
       "isFreeShipping": false
     },
@@ -150,7 +149,7 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985560/Logo-Brand_u4pdbg.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452958/Logo-Brand_whlewa.webp",
       "price": 9,
       "isFreeShipping": true
     },
@@ -166,7 +165,7 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615992402/ur_logo_ltwveq.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452959/ur_logo_w65icb.webp",
       "price": 9,
       "isFreeShipping": true
     },
@@ -182,13 +181,13 @@
       "semesterStart1":"4th Feb",
       "semesterStart2":"4th July",
       "AcommodationCost":2000,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/ezgif_u1cs1x.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452959/NXWWxgvH_400x400_myxepr.webp",
       "price": 9,
       "isFreeShipping": true
     },
     {
       "id": 11,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/amclogo33_emxtit.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452957/amclogo33_hbfvhb.webp",
       "sku": 11600983276356165,
       "title": "American College",
       "description": "",
@@ -204,7 +203,7 @@
     },
     {
       "id": 12,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985559/LC-Logo-200_oknu24.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452958/LC-Logo-200_itzoiy.webp",
       "sku": 11600983276356165,
       "title": "Larnaca College",
       "description": "",
@@ -220,7 +219,7 @@
     },
     {
       "id": 13,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/ezgif.com-gif-maker_4_ad6t5k.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452959/sKJDXt-F_400x400_mwqjkp.webp",
       "sku": 11600983276356165,
       "title": "College of Tourism and Hotel Management",
       "description": "",
@@ -236,7 +235,7 @@
     },
     {
       "id": 14,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/ezgif.com-gif-maker_5_uyzvww.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452957/cdacollege_lc3nrl.webp",
       "sku": 11600983276356165,
       "title": "CDA College",
       "description": "",
@@ -252,7 +251,7 @@
     },
     {
       "id": 15,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985559/ezgif.com-gif-maker_3_rjgmxu.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452958/global_college_n95vit.webp",
       "sku": 11600983276356165,
       "title": "Global College",
       "description": "",
@@ -268,7 +267,7 @@
     },
     {
       "id": 16,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985560/nicosia_hfv1qp.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452959/nicosia_tahmpp.webp",
       "sku": 11600983276356165,
       "title": "Nicosia University",
       "description": "",
@@ -284,7 +283,7 @@
     },
     {
       "id": 17,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/euc-logo_nsadl3.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452959/uni_profile_16011_d1e3l0.webp",
       "sku": 11600983276356165,
       "title": "European University Cyprus",
       "description": "",
@@ -300,7 +299,7 @@
     },
     {
       "id": 18,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985560/winchester_esprks.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452959/winchester_akdxjt.webp",
       "sku": 11600983276356165,
       "title": "University of Winchester",
       "description": "",
@@ -316,7 +315,7 @@
     },
     {
       "id": 19,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/download_1_brmxpy.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452957/download_1_kbj2rr.webp",
       "sku": 11600983276356165,
       "title": "Ulster University",
       "description": "",
@@ -332,7 +331,7 @@
     },
     {
       "id": 20,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985559/logo_pwyrp8.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452958/logo_dnwazs.webp",
       "sku": 11600983276356165,
       "title": "Newcastle College",
       "description": "",
@@ -348,7 +347,7 @@
     },
     {
       "id": 21,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/cats_uk_logo_white_jhb1gq.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452957/cats_uk_logo_white_gljfvx.webp",
       "sku": 11600983276356165,
       "title": "CATS College",
       "description": "",
@@ -364,7 +363,7 @@
     },
     {
       "id": 22,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985558/download_srpyfp.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452958/download_t2atcq.webp",
       "sku": 11600983276356165,
       "title": "Cardiff and Vale College",
       "description": "",
@@ -380,7 +379,7 @@
     },
     {
       "id": 23,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985559/logo_1_ybv1ff.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452958/logo_1_wtab5p.webp",
       "sku": 11600983276356165,
       "title": "York University",
       "description": "",
@@ -396,7 +395,7 @@
     },
     {
       "id": 24,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985560/logo-dark_zukq0k.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452958/logo-dark_pojfry.webp",
       "sku": 11600983276356165,
       "title": "Canterburry Christ Church University",
       "description": "",
@@ -412,7 +411,7 @@
     },
     {
       "id": 25,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615992403/chester-uni-web_dev05a.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452957/chester-uni-web_zhper7.webp",
       "sku": 11600983276356165,
       "title": "University of Chester",
       "description": "",
@@ -428,7 +427,7 @@
     },
     {
       "id": 26,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985560/resolution-logo_vbnlfn.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452959/resolution-logo_ljk140.webp",
       "sku": 11600983276356165,
       "title": "University of Greenwich",
       "description": "",
@@ -444,7 +443,7 @@
     },
     {
       "id": 27,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615985559/images_o4atk7.webp",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452958/images_kd2aw5.webp",
       "sku": 11600983276356165,
       "title": "University of East London",
       "description": "",
@@ -460,7 +459,7 @@
     },
     {
       "id": 28,
-      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615992777/coventry_od1zw9.png",
+      "Picture":"https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1616452957/coventry_uni_pc3iea.webp",
       "sku": 11600983276356165,
       "title": "Coventry University",
       "description": "",
@@ -474,5 +473,9 @@
       "price": 9,
       "isFreeShipping": true
     }
+    
+
+
+
   ]
 }
