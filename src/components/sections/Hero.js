@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
-import ButtonGroup from "../elements/ButtonGroup";
-import Button from "../elements/Button";
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import Image from "../elements/Image";
 import Modal from "../elements/Modal";
 import "./sections.css"
+import Fade from 'react-reveal/Fade';
+import {Link} from 'react-scroll';
+import BookAnAppointment from "../../BookAnAppointment";
+
 const propTypes = {
   ...SectionProps.types,
 };
@@ -13,7 +17,13 @@ const propTypes = {
 const defaultProps = {
   ...SectionProps.defaults,
 };
-
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+}));
 const Hero = ({
   className,
   topOuterDivider,
@@ -50,77 +60,65 @@ const Hero = ({
     topDivider && "has-top-divider",
     bottomDivider && "has-bottom-divider"
   );
-
+  const classes = useStyles();
   return (
     <section {...props} className={outerClasses}>
       <div
        
-        className="container-sm"
-      >
+        className="container-sm" >
+        <Fade bottom>
         <div className={innerClasses}>
           <div className="hero-content">
             <h3
-              className="font-color-hero padding-15p mt-0 mb-16 reveal-from-bottom"
+              className="topline"
               data-reveal-delay="200"
             >
-              Are you looking to study abroad?
+              Study Abroad
               {/* <span className="text-color-primary">Start your Journey With us today</span> */}
             </h3>
-            <div className="container-xs">
+            <h1
+              // className="font-color-hero mt-0 mb-10 reveal-from-bottom"
+              className="headline" 
+              data-reveal-delay="200"
+            >
+              <span>Are you looking to<br></br>study abroad?</span>
+              {/* <span className="text-color-primary">Start your Journey With us today</span> */}
+            </h1>
+            <div className="container-tagline">
               <p
-                className="padding-15p m-0 mb-32 reveal-from-bottom"
+                // className="padding-15p m-0 mb-32 reveal-from-bottom"
+                className="tagline"
                 data-reveal-delay="400"
               >
-                <span className="font-color-hero ">
-                  Start your Journey With us today
+                <span>
+                 Our CMI accredited undergraduate business degrees have been designed with employability in mind. Developed by experienced degree from us. 
                 </span>
               </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
+              <div className="hero-btn" data-reveal-delay="600">
+                  <Fade left>
                   <Button
-                    tag="a"
-                    color="primary"
+                  className="btn-readmore"
                     wideMobile
-                    href="/university"
-                  >
-                    Book an Appointment
-                  </Button>
-                  <Button
-                    tag="a"
-                    color="primary"
-                    wideMobile
-                    href="/university"
-                    className="button"
-                  >
-                   Apply Now
-                  </Button>
-                  {/* <Button
-                    tag="a"
-                    color="dark"
-                    wideMobile
-                    href="https://github.com/cruip/open-react-template/"
-                  >
-                    View on Github
-                  </Button> */}
-                </ButtonGroup>
+                    style={{color:'white',backgroundColor:"rgb(0,165,79)"}}
+                  >                  
+
+                  <a style={{textAlign:'left'}} href="/book-an-appointment">Book An Apppointment for Free &#8594;</a>
+                  {/* <Link
+                    activeClass="active"
+                    href="/book-an-appointment"
+                    // to={BookAnAppointment}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    >Book a Free Appointment 	&#8594;</Link> */}
+                    </Button>
+                  </Fade>
+
               </div>
             </div>
           </div>
-          {/* <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
-                alt="Hero"
-                width={896}
-                height={504} />
-            </a>
-          </div> */}
+        
           <Modal
             id="video-modal"
             show={videoModalActive}
@@ -129,6 +127,7 @@ const Hero = ({
             videoTag="iframe"
           />
         </div>
+        </Fade>
       </div>
     </section>
   );

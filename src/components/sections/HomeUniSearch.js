@@ -3,6 +3,7 @@ import Button from "../elements/Button";
 import React, { Component } from "react";
 import './sections.css'
 import { Link } from "react-router-dom";
+import Image from '../elements/Image';
 
 class HomeUniSearch extends Component{
   constructor(props) {
@@ -32,12 +33,23 @@ return(
       <option>U.K.</option>
     </Form.Control>
   </Form.Group>
-  <Button  className="right-button" type="submit"> <Link
+  <Button  className="right-button" 
+            style={{
+              backgroundColor:"#00a54f",  
+              height:"50px"  
+            }}
+            type="submit"> <Link
                         className="menu-text-color"
-                        to="/university"
-                       
+                        to="/university"                   
                       >
-                        Search
+                      <div classNane="wrapper" style={{display:"flex"}}>
+                        <Image
+                            src={require('./../../assets/images/search.ico')}
+                            alt="Features tile icon 01"
+                            width={25}
+                            height={25} />
+                        <span style={{color:"white"}}>Search</span>
+                      </div>
                       </Link></Button>
 </Form>
 

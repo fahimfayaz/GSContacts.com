@@ -11,6 +11,9 @@ import FeaturesTiles from "./components/sections/FeaturesTilesAboutus";
 import FeaturesSplit from "./components/sections/FeaturesSplitAboutus";
 import Products from "./components/ProductsAustralia";
 import HeroCarousel from "react-hero-carousel";
+import Button from '@material-ui/core/Button';
+import {Link} from 'react-scroll';
+
 class UniAustralia extends Component {
   render() {
     const sectionHeader = {
@@ -35,15 +38,39 @@ class UniAustralia extends Component {
     
   </HeroCarousel>
   </div>
-  <div id = "overlay">  
-  <SectionHeader data={sectionHeader} className="padding-top-section-header center-content" />
-      
-  </div>
-      
-      <Provider store={store}>
+  <Provider store={store}>
         <div className="container">
-         
+  <div id = "overlay" className='sec_hdr_container'>  
+  <SectionHeader data={sectionHeader} className="padding-top-section-header center-content" />
+    <div id = "overlay" className='sec_btn_container' style={{display:"flex",flexDirection:"column",verticalAlign:"center"}}>
+      <div style={{padding:"0 30px 0 30px",width:"100%"}}>
+        <a style={{color:"white"}}>Lorem Ipsum is simply dummy text of the printing 
+          and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled 
+          it to make a type specimen book. It has survived not only five 
+          centuries, but also the leap into electronic typesetting, remaining 
+          essentially unchanged. 
+          </a>
+      </div>
+        <Button
+              className="btn-seemore"
+                wideMobile
+                href="#australiaproducts"
+                style={{fontSize:"20px"}}
+              >
+              <Link
+                activeClass="active"
+                to="section-australia-cards"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                >See More 	&#8595;</Link>
           
+        </Button>
+      </div>
+  </div>
          
            <Products/>
          
@@ -51,7 +78,7 @@ class UniAustralia extends Component {
               {/* <Basket />
               <Copyright /> */}
             
-        </div>
+      </div>  
       </Provider>
       </>
     );

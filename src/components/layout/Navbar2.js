@@ -80,7 +80,7 @@ const NavMenu = () => {
               </span>
               
             </NavDropdown>
-            <NavDropdown title="Services" id="collapsible-nav-dropdown">
+            <NavDropdown className={style1.ani_link}title="Services" id="collapsible-nav-dropdown">
               <span>
                 <NavDropdown.Item className="dropdown-box" href="/recruitment-partners">
                   Recruitment Partners
@@ -100,7 +100,7 @@ const NavMenu = () => {
             <Nav.Link className={style1.ani_link} href="/events">Events</Nav.Link>
           </Nav>
           
-          <div style={{float: "right"}}>
+          <div style={{float: "right", marginRight: "40px"}}>
             <Nav className="mr-auto">
             
               <IconButton
@@ -139,12 +139,12 @@ const NavMenu = () => {
                     </Typography>
                   </Nav.Link></MenuItem>
                 <MenuItem onClick={handleClose}>
-                  <Nav.Link eventKey={2} href="#memes">
+                  <Nav.Link eventKey={2} href="/agent-registration">
                     <Typography
                       className={style1.menuItemFont}
                       variant="primary"
                     >
-                      Register
+                    Register
                     </Typography>
                   </Nav.Link></MenuItem>
               </Menu> 

@@ -17,6 +17,20 @@ import {
 //     });
 // };
 
+export const fetchProductsSingle = () => (dispatch) => {
+ 
+  fetch("http://localhost:8000/products")
+  .then((res) => res.json())
+  .catch((err) =>
+    fetch("db.json")
+      .then((res) => res.json())
+      .then((data) => data.products)
+  )
+  .then((data) => {
+    dispatch({ type: FETCH_PRODUCTS, payload: data });
+  });
+  }
+
 export const fetchProducts = (country) => (dispatch) => {
   if(country=="canada"){
     fetch("http://localhost:8000/products")

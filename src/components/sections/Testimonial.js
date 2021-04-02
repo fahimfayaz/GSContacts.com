@@ -59,7 +59,7 @@ const Testimonial = ({
           <div className={tilesClasses}>
 
             <div className="tiles-item reveal-from-right" data-reveal-delay="200">
-              <div className="tiles-item-inner">
+              <div className="tiles-item-inner">./
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0 text-color-high">
                    My most memorable experience at UTS was one of my first assignments where I was asked to research and present on the common struggles undergraduates and first year students experience at university. I loved researching and gaining insights other students experienced and comparing their similarities and differences to my own

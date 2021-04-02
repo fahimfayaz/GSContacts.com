@@ -3,6 +3,9 @@ import Image from "./components/elements/Image";
 import "./cards.scss";
 import qslogo from "./assets/images/qs-logo.png";
 import thelogo from "./assets/images/the-logo.png";
+import Divider from '@material-ui/core/Divider';
+import Grid from '@material-ui/core/Grid';
+
 // window.React = React
 class CardHeader extends React.Component {
   render() {
@@ -29,7 +32,7 @@ class CardHeader extends React.Component {
 class Button extends React.Component {
   render() {
     return (
-      <button className="button button-primary">
+      <button className="button button-primary" style={{backgroundColor:'#00a54f'}}>
         <i className="fa fa-chevron-right"></i> Find out more
       </button>
     );
@@ -42,34 +45,73 @@ class CardBody extends React.Component {
       <div className="card-body">
         <div className="forehead">
           <div className="uni-title">{this.props.title}</div>
-          <i class="fa fa-star"></i>
-          <div className="ranking">Ranking : {this.props.ranking}</div>
+          <div className="ranking">
+            <Image
+            src={require('./assets/images/rank icon.png')}
+            style={{margin:"auto"}}
+            alt="Features tile icon 01"
+            width={16}
+            height={20} />
+            Ranking : {this.props.ranking}</div>
         </div>
         <div className="cost-li">
           <ul className="list">
-            <li>
-              <div className="ranking">
-                <img src={qslogo} width={17} height={17} className="img" />
-                Ranking : {this.props.ranking}
-              </div>
-              <div className="ranking">
-                <img src={thelogo} width={17} height={17} className="img" />
-                Ranking : {this.props.ranking}
-              </div>
-            </li>
-            <li className="list sems">Average Annual UG Fee : ${this.props.ugFee}</li>
-            <li className="list sems">Average Annual PG Fee : ${this.props.pgFee}</li>
-            <li className="list sems">diploma Fee : {this.props.diplomaFee}</li>
+            <li className="list sems"><span style={{float:"left"}}>Average Annual UG Fee :</span><span style={{float:"right"}}> ${this.props.ugFee}</span></li>
+            <Divider />
+            <li className="list sems"><span style={{float:"left"}}>Average Annual PG Fee :</span><span style={{float:"right"}}> ${this.props.pgFee}</span></li>
+            <Divider />
+            <li className="list sems"><span style={{float:"left"}}>diploma Fee :</span><span style={{float:"right"}}> ${this.props.diplomaFee}</span></li>
+            <Divider />
           </ul>
         </div>
-        <div className="instabox-foot">
-          <ul className="list sems">
-            <li>Semester Start :{this.props.semesterStart1}, {this.props.semesterStart2}</li>
-          </ul>
-          <p className="list sems">Accomodation cost : {this.props.AcommodationCost}</p>
-          <p>{this.props.text}</p>
+        
+        <div style={{justifyContent:"center",marginTop:"5px",marginBottom:"5px",marginLeft:"5px",marginRight:"5px",paddingRight:"20px!important"}}>
+          <Grid container spacing={3}>
+            <Grid item xs={6}  sm container>
+              <Grid item xs container direction="column" style={{margin:"auto 0",border:"1px solid #e8e8e8",borderRadius:".3em"}}>
+                <Grid item xs style={{margin:"auto 0",float:"center",display:"inline",paddingTop:"5px",paddingBottom:"5px"}}>
+                  <Image
+                    src={require('./assets/images/accomodation.png')}
+                    alt="Features tile icon 01"
+                    style={{margin:"auto"}}
+                    width={40}
+                    height={30} />
+                </Grid>
+                <Grid item xs style={{paddingTop:"5px",paddingBottom:"5px"}}>
+                  <span style={{color:"#00a54f"}}>Semester Start :</span>
+                </Grid>
+                <Grid item xs style={{paddingTop:"5px",paddingBottom:"5px"}}>
+                  <span style={{fontSize:"12px"}}>{this.props.semesterStart1},</span>
+                </Grid>
+                <Grid item xs style={{paddingTop:"5px",paddingBottom:"5px"}}>
+                  <span style={{fontSize:"12px"}}>{this.props.semesterStart2}</span>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item xs={6} sm container>
+              <Grid item xs container direction="column" style={{border:"1px solid #e8e8e8",borderRadius:".3em"}}>
+                <Grid item xs style={{margin:"auto 0",float:"center",display:"inline",paddingTop:"5px",paddingBottom:"5px"}}>
+                <Image
+                  src={require('./assets/images/calender.png')}
+                  style={{margin:"auto"}}
+                  alt="Features tile icon 01"
+                  width={40}
+                  height={30} />
+                </Grid>
+                <Grid item xs style={{paddingTop:"5px",paddingBottom:"5px"}}>
+                  <span style={{color:"#00a54f"}}>Accomodation cost :</span>
+                </Grid>
+                <Grid item xs style={{paddingTop:"5px",paddingBottom:"5px"}}>
+                  <span style={{fontSize:"12px"}}>{this.props.AcommodationCost}</span>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
         </div>
-        <Button />
+
+        <div className="mb-10" style={{marginBottom:"10px"}}>
+          <Button />
+        </div>
       </div>
     );
   }

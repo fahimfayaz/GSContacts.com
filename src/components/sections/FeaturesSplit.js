@@ -4,6 +4,8 @@ import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
 import HomeUniSearch from './HomeUniSearch'
+import { Grid } from '@material-ui/core';
+
 const propTypes = {
   ...SectionSplitProps.types,
 };
@@ -70,8 +72,8 @@ const FeaturesSplit = ({
                   Search from the widest array of universities
                 </h1>
                
-<h4><HomeUniSearch/>
-</h4>
+                <h4><HomeUniSearch/>
+                </h4>
 
                
               </div>
@@ -89,40 +91,7 @@ const FeaturesSplit = ({
                   height={396}
                 />
               </div>
-            </div>
-
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-right"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8"></div>
-                <h1 className="mt-0 mb-12 text-color-primary">
-                  Free Exclusive Webinars
-                </h1>
-                <p className="m-0">
-                  Make sure to register for our Webinars to meet directly with
-                  top International Universities from the comfort of your own
-                  home. Get the opportunity to speak directly with university
-                  representatives and receive first-hand information directly
-                  from the University.
-                </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-              >
-                <Image
-                  src={require("./../../assets/images/features-split-image-02.png")}
-                  alt="Features split 02"
-                  width={528}
-                  height={396}
-                />
-              </div>
-            </div>
+            </div>     
 
             <div className="split-item">
               <div
@@ -138,6 +107,7 @@ const FeaturesSplit = ({
                   "split-item-image center-content-mobile reveal-from-bottom",
                   imageFill && "split-item-image-fill"
                 )}
+                style={{paddingTop:"2px!important"}}
                 data-reveal-container=".split-item"
               >
                 {/* <Image
@@ -147,6 +117,44 @@ const FeaturesSplit = ({
                   height={396} /> */}
               </div>
             </div>
+            <Grid container>
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+              <div
+                className="split-item-content center-content-mobile reveal-from-bottom" >
+                  <Image
+                    src={require("./../../assets/images/features-split-image-02.png")}
+                    alt="Features split 02"
+                    width={528}
+                    height={396}
+                  />
+              </div>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+              <div
+                className="split-item-content center-content-mobile reveal-from-right" 
+                style={{maxWidth:"528px",
+                width:"100%",
+                height:"100%",
+                backgroundColor:"#00a54f",
+                textAlign:"center",
+                marginLeft:"1px",
+                padding:"20px 20px 20px 20px"
+              }}
+              >
+                <h1 className="mt-0 mb-12" >
+                  <span style={{color:"#ffffff",fontSize:"35px",lineHeight:"3"}}>Free Exclusive Webinars</span>
+                </h1>
+                <h3 style={{borderTop: "2px solid white",marginLeft:"220px",marginRight:"220px",marginTop:"12px",marginBottom:"26px"}}></h3>
+                <p className="m-0" style={{color:"#ffffff",fontSize:"15px",paddingLeft: "20px",paddingRight: "20px",paddingBottom:"30px",lineHeight:"1.5"}}>
+                  Make sure to register for our Webinars to meet directly with
+                  top International Universities from the comfort of your own
+                  home. Get the opportunity to speak directly with university
+                  representatives and receive first-hand information directly
+                  from the University.
+                </p>
+              </div>
+              </Grid>
+            </Grid> 
           </div>
         </div>
       </div>

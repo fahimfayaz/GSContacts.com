@@ -7,7 +7,9 @@ import Uni from './uniPage';
 import UniCountry from './UniAustralia';
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
-
+import { ApolloProvider } from "@apollo/react-hooks";
+import { ApolloClient, HttpLink, InMemoryCache } from "apollo-boost";
+import { setContext } from "apollo-link-context";
 // Views
 import Home from './views/Home';
 import Aboutus from './Aboutus';
@@ -21,6 +23,10 @@ import UniUK from './UniUK';
 import UniAustralia from './UniAustralia';
 import UniCyprus from './UniCyprus';
 import StudentServices from './StudentServices'
+import SingleUniPage from './singleUniPage'
+import AgentRegistration from './AgentRegistration'
+import ApplyNow from './ApplyNow'
+import BookAnAppointment from './BookAnAppointment';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -31,7 +37,24 @@ const trackPage = page => {
 };
 
 const App = () => {
+  const httpLink = new HttpLink({
+    uri: "http://contactsint.com:8080/v1/graphql",
+  headers: {
+    'x-hasura-admin-secret': 'Contacts@123'
+  }
+  });
+  const client = new ApolloClient({
+    link: httpLink,
+    cache: new InMemoryCache(),
+    options: {
+      reconnect: true,
+   connectionParams: {
+        headers: {
+          'x-hasura-access-key': 'Contacts@123'
+        }
+   }}
 
+  });
   const childRef = useRef();
   let location = useLocation();
 
@@ -44,9 +67,12 @@ const App = () => {
   }, [location]);
 
   return (
+    <>
+    <ApolloProvider client={client}>
     <ScrollReveal
       ref={childRef}
       children={() => (
+       
         <Switch>
 
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
@@ -58,11 +84,19 @@ const App = () => {
           <AppRoute exact path="/students" component={StudentServices} layout={LayoutDefault} />
           <AppRoute exact path="/events" component={Events} layout={LayoutDefault} />
            <AppRoute exact path="/canada" component={UniCanada} layout={LayoutDefault} />
+           <AppRoute exact path={"/university/:id"} component={SingleUniPage} layout={LayoutDefault} />
           <AppRoute exact path={'/uk'} component={UniUK} layout={LayoutDefault} />
           <AppRoute exact path={'/australia'} component={UniAustralia} layout={LayoutDefault} />
           <AppRoute exact path={'/cyprus'} component={UniCyprus} layout={LayoutDefault} /> 
+          <AppRoute exact path={'/agent-registration'} component={AgentRegistration} layout={LayoutDefault} /> 
+          <AppRoute exact path={'/apply-now'} component={ApplyNow} layout={LayoutDefault} /> 
+          <AppRoute exact path={'/book-an-appointment'} component={BookAnAppointment} layout={LayoutDefault} /> 
+          
         </Switch>
+      
       )} />
+      </ApolloProvider>
+      </>
   );
 }
 

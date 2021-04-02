@@ -1,24 +1,27 @@
 .ani_link {
-    position: relative!important;
-    cursor: pointer!important;
-  }
-  .ani_link::after {
-    content: ""!important;
-    display: block!important;
-    width: 0!important;
-    height: 2px!important;
-    background: rgb(74, 116, 230)!important;
-    transition: width 0.3s!important;
-    margin-top: 8px!important;
-  }
-  
-  .ani_link:hover.ani_link::after {
-    width: 100%!important;
-    transition: width 0.3s!important;
-  }
-  .menuItemFont {
-    font-family: inherit!important;
-    color: rgb(30, 93, 194)!important;
-    font-size: 200!important;
-  }
-  
+  position: relative!important;
+  cursor: pointer!important;
+  text-align:center!important;
+}
+.ani_link::after {
+  content: ""!important;
+  display: block!important;
+  width: 0!important;
+  height: 2px!important;
+  background: rgb(74, 116, 230)!important;
+  transition: width 0.3s!important;
+  margin-top: 8px!important;
+  text-align:center!important;
+}
+
+.ani_link:hover.ani_link::after {
+  width: 100%!important;
+  transition: width 0.3s!important;
+  text-align:center!important;
+}
+.menuItemFont {
+  font-family: inherit!important;
+  color: rgb(30, 93, 194)!important;
+  font-size: 200!important;
+  text-align:center!important;
+}
