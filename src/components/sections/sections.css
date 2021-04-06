@@ -1,10 +1,11 @@
 .container-sm{
-    float: left;
+    float: center;
     overflow: auto;
-    padding: 100px;
+    padding: 0px;
 }
 .hero-content{
-    width: 60%;
+    width: 100%!important;
+    margin: 0 auto;
 }
 .topline{
     color: rgb(0,165,79);
@@ -28,13 +29,13 @@
     float: left;
 }
 .tagline{
-    text-align: left;
+    text-align: center;
     color: white;
     font-size: 18px;
     text-shadow: 1px 1px rgba(0,0,0,0.8);
 }
 .hero-btn{
-    float: left;
+    float: center;
 }
 .btn-readmore{
     color:'white';
@@ -55,6 +56,10 @@
 .padding-top{
     padding-top:20px;
 }
+.btn{
+    min-width:200px!important;
+    background-color: #00a54f!important;
+}
 
 @media screen and (max-width:800px){
     .container-sm{
@@ -63,19 +68,19 @@
         padding-left: 60px;
     }
     .hero-content{
-        width: 80%;
+        width: 100%;
     }
     .hero-content > .topline{
         font-size: 20px;
-        text-align: left;
+        text-align: center;
     }
     .hero-content > .h1{
         font-size: 35px;
-        text-align: left;
+        text-align: center;
     }
     .container-xs > .p{
         font-size: 12px;
-        text-align: left;
+        text-align: center;
     }
     .container-tagline{
         float: center;

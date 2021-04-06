@@ -24,4 +24,13 @@ export const firebaseConfig = {
   //export { projectStorage, projectFirestore, timestamp };
 
   // Initialize Firebase
-   
+  export const streamGroceryListItems = (groceryListId, observer) => {
+    return db.collection('universities')
+       
+        .onSnapshot(observer);
+};
+export const streamUniListItems = (groceryListId, observer,country) => {
+  return db.collection('universities').where("Country", "==", country)
+     
+      .onSnapshot(observer);
+};

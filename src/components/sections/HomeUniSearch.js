@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import './sections.css'
 import { Link } from "react-router-dom";
 import Image from '../elements/Image';
-
+import EmployeeForm from '../../HomeUniSearchForm/EmployeeForm';
 class HomeUniSearch extends Component{
   constructor(props) {
     super(props);
@@ -22,7 +22,9 @@ render (){
 return(
 <>
 
-<Form>
+<EmployeeForm/>
+
+{/* <Form>
   
   <Form.Group controlId="exampleForm.SelectCustomSizeLg">
     <Form.Label><div className="select-country">Select a country</div></Form.Label>
@@ -51,7 +53,7 @@ return(
                         <span style={{color:"white"}}>Search</span>
                       </div>
                       </Link></Button>
-</Form>
+</Form> */}
 
 </>
 

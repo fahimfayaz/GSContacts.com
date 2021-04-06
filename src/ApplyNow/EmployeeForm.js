@@ -91,7 +91,7 @@ export default function EmployeeForm() {
 console.log(values)
     return (
         <React.Fragment>   
-            <Typography className="padding" style={{color:"black", fontFamily:"poppins"}} variant="h6" gutterBottom>
+            <Typography className="" style={{color:"black", fontFamily:"poppins"}} variant="h6" gutterBottom>
         Fill up this form and we will apply to the best University for you 
             </Typography>
         <Form onSubmit={handleSubmit}>

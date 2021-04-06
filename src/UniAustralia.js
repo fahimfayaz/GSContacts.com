@@ -28,12 +28,12 @@ class UniAustralia extends Component {
      <img
       style={{
         width: "100%",
-        height: "70%",
+        height: "100%",
         objectFit: "cover",
       }}
       src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png"
       width="100%"
-      height="500px"
+      height="100%"
     />
     
   </HeroCarousel>

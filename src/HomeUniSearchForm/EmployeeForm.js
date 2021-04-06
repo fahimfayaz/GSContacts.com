@@ -6,6 +6,7 @@ import * as employeeService from "./employeeService";
 import './form.css'
 import db from "../config.js"
 import Typography from '@material-ui/core/Typography';
+import { Redirect } from 'react-router';
 
 const genderItems = [
     { id: 'male', title: 'Male' },
@@ -62,22 +63,7 @@ export default function EmployeeForm() {
         e.preventDefault();
         setLoader(true);
     
-        db.collection("agents")
-          .add({
-            name: values.fullName,
-            email: values.email,
-            mobile: values.mobile,
-            gender: values.gender,
-            country:values.country
-          })
-          .then(() => {
-            setLoader(false);
-            alert("Your message has been submitted. You will get a confirmation email shortly👍");
-          })
-          .catch((error) => {
-            alert(error.message);
-            setLoader(false);
-          });
+     
     
         setName("");
         setEmail("");
@@ -87,44 +73,9 @@ console.log(values)
     return (
         <Form onSubmit={handleSubmit}>
             <Grid className="padding" container>
-                <Grid  item xs={12}>
-                    <Controls.Input
-                        name="fullName"
-                        label="Full Name"
-                        value={values.fullName}
-                        onChange={handleInputChange}
-                        error={errors.fullName}
-                    />
-                    <Controls.Input
-                        label="Email"
-                        name="email"
-                        value={values.email}
-                        onChange={handleInputChange}
-                        error={errors.email}
-                    />
-                    <Controls.Input
-                        label="Mobile"
-                        name="mobile"
-                        value={values.mobile}
-                        onChange={handleInputChange}
-                        error={errors.mobile}
-                    />
-                    <Controls.Input
-                        label="City"
-                        name="city"  
-                        value={values.city}
-                        onChange={handleInputChange}
-                    />
-
-                </Grid>
+              
                 <Grid item xs={12}>
-                    {/* <Controls.RadioGroup
-                        name="gender"
-                        label="Gender"
-                        value={values.gender}
-                        onChange={handleInputChange}
-                        items={genderItems}
-                    /> */}
+                
                     <Controls.Select
                         name="country"
                         label="Country"
@@ -133,23 +84,13 @@ console.log(values)
                         options={employeeService.getDepartmentCollection()}
                         error={errors.departmentId}
                     />
-                    {/* <Controls.DatePicker
-                        name="hireDate"
-                        label="Hire Date"
-                        value={values.hireDate}
-                        onChange={handleInputChange}
-                    /> */}
-                    {/* <Controls.Checkbox
-                        name="isPermanent"
-                        label="Permanent Employee"
-                        value={values.isPermanent}
-                        onChange={handleInputChange}
-                    /> */}
+                 
 
                     <div>
                         <Controls.Button
                             type="submit"
-                            text="Submit" />
+                            text="Submit"
+                            onClick={event =>  window.location.href='/university/'+values.country} />
                         <Controls.Button
                             text="Reset"
                             color="default"

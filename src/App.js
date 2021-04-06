@@ -27,7 +27,7 @@ import SingleUniPage from './singleUniPage'
 import AgentRegistration from './AgentRegistration'
 import ApplyNow from './ApplyNow'
 import BookAnAppointment from './BookAnAppointment';
-
+import IndieUni from './individualUni'
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
@@ -90,6 +90,9 @@ const App = () => {
           <AppRoute exact path={'/cyprus'} component={UniCyprus} layout={LayoutDefault} /> 
           <AppRoute exact path={'/agent-registration'} component={AgentRegistration} layout={LayoutDefault} /> 
           <AppRoute exact path={'/apply-now'} component={ApplyNow} layout={LayoutDefault} /> 
+          <AppRoute exact path={'/indie-uni/:id'} component={IndieUni} layout={LayoutDefault} /> 
+          
+          
           <AppRoute exact path={'/book-an-appointment'} component={BookAnAppointment} layout={LayoutDefault} /> 
           
         </Switch>
