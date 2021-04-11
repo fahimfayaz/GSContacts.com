@@ -38,14 +38,14 @@ function SingleUniPage(props) {
           <div className="padding-top container">
             <div className="justify-content-center row">
               <div className="col-md-3">
-              <Products uni={props.match.params.id}/>
+              
               </div>
 
               <div className="col-md-9">
                 <div className="justify-content-center section">
                   <div className="padding"></div>
                   <div className="justify-content-center">
-                   
+                  <Products uni={props.match.params.id}/>
                   </div>
                 </div>
               </div>

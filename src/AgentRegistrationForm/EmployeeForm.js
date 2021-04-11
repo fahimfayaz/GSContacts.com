@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useRef, useEffect,useCallback } from 'react'
 import { Grid, } from '@material-ui/core';
 import Controls from "./Controls";
 import { useForm, Form } from './useForm';
@@ -6,7 +6,10 @@ import * as employeeService from "./employeeService";
 import './form.css'
 import db from "../config.js"
 import Typography from '@material-ui/core/Typography';
-
+import * as firebase from 'firebase';
+import { Link, useHistory } from "react-router-dom"
+import firebaseApp from "../config"
+import { useAuth } from "../context"
 const genderItems = [
     { id: 'male', title: 'Male' },
     { id: 'female', title: 'Female' },
@@ -18,6 +21,8 @@ const initialFValues = {
     fullName: '',
     email: '',
     mobile: '',
+    password:'',
+    confirm_password:'',
     city: '',
     gender: 'male',
     country: '',
@@ -25,7 +30,17 @@ const initialFValues = {
     isPermanent: false,
 }
 
+
+
 export default function EmployeeForm() {
+    const emailRef = useRef()
+  const passwordRef = useRef()
+  const passwordConfirmRef = useRef()
+  const { signup } = useAuth()
+  const [error, setError] = useState("")
+  const [loading, setLoading] = useState(false)
+  const history = useHistory()
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -58,17 +73,45 @@ export default function EmployeeForm() {
         resetForm
     } = useForm(initialFValues, true, validate);
 
-    const handleSubmit = (e) => {
+    // const handleSubmit = useCallback(async event => {
+    //     event.preventDefault();
+    //     const { email, password } = event.target.elements;
+    //     try {
+    //       await firebaseApp
+    //             .auth()
+    //         .createUserWithEmailAndPassword(email.value, password.value);
+    //       history.push("/");
+    //     } catch (error) {
+    //       alert(error);
+    //     }
+    //   }, [history]);
+
+    async function handleSubmit(e) {
         e.preventDefault();
-        setLoader(true);
-    
+        // setLoader(true);
+     
+      
+          try {
+            setError("")
+            setLoading(true)
+            await signup(values.email, values.password)
+            history.push("/")
+          } catch {
+            setError("Failed to create an account")
+          }
+      
+      
+
+
         db.collection("agents")
           .add({
             name: values.fullName,
             email: values.email,
             mobile: values.mobile,
             gender: values.gender,
-            country:values.country
+            country:values.country,
+            password:values.password,
+            status:"TBA"
           })
           .then(() => {
             setLoader(false);
@@ -82,6 +125,7 @@ export default function EmployeeForm() {
         setName("");
         setEmail("");
         setMessage("");
+        setLoading(false)
       };
 console.log(values)
     return (
@@ -95,10 +139,29 @@ console.log(values)
                         onChange={handleInputChange}
                         error={errors.fullName}
                     />
+                   
                     <Controls.Input
                         label="Email"
                         name="email"
+                        ref={emailRef}
                         value={values.email}
+                        onChange={handleInputChange}
+                        error={errors.email}
+                    />
+                  
+                    <Controls.Password
+                        label="Password"
+                        name="password"
+                        ref={passwordRef}
+                        value={values.password}
+                        onChange={handleInputChange}
+                        error={errors.email}
+                    />
+                    <Controls.Password
+                        label="Confirm Password"
+                        name="confirm_password"
+                        ref={passwordConfirmRef}
+                        value={values.confirm_password}
                         onChange={handleInputChange}
                         error={errors.email}
                     />
@@ -153,6 +216,7 @@ console.log(values)
                         <Controls.Button
                             text="Reset"
                             color="default"
+                           
                             onClick={resetForm} />
                     </div>
                 </Grid>

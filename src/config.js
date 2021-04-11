@@ -1,7 +1,7 @@
 import  firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
-
+import "firebase/auth"
 export const firebaseConfig = {
     apiKey: "AIzaSyBS1SewIGhzjwi0DCMJW36e9EZiLCUVk2M",
     authDomain: "contactsint.firebaseapp.com",
@@ -18,9 +18,10 @@ export const firebaseConfig = {
 //   const projectFirestore = firebase.firestore();
 //   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
   
-  const firebaseApp=firebase.initializeApp(firebaseConfig);
+   const firebaseApp=firebase.initializeApp(firebaseConfig);
   const db=firebase.firestore();
   export default db; 
+  export const auth = firebaseApp.auth()
   //export { projectStorage, projectFirestore, timestamp };
 
   // Initialize Firebase

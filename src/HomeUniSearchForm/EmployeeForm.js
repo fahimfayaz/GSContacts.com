@@ -90,10 +90,12 @@ console.log(values)
                         <Controls.Button
                             type="submit"
                             text="Submit"
+                            className="btn-color"
                             onClick={event =>  window.location.href='/university/'+values.country} />
                         <Controls.Button
                             text="Reset"
                             color="default"
+                        
                             onClick={resetForm} />
                     </div>
                 </Grid>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 80px 60px;
-  background: radial-gradient(circle, rgba(97,99,255,1) 0%, rgba(1,0,0,1) 100%);
+  background: #002e5a;
   margin-top:20px;
   @media (max-width: 1000px) {
     padding: 70px 30px;

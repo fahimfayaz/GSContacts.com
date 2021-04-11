@@ -103,7 +103,7 @@ const FeaturesTiles = ({
                     Agents
                         </h4>
                       <p className="m-0 text-sm">
-                      Diversify your campus by attracting qualified students from countries around the world.
+                      Give your students the best chance for success with access to 1,500+ educational institutions.
                         </p>
                     </div>
                     <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
@@ -161,7 +161,8 @@ const FeaturesTiles = ({
                       Institutes
                         </h4>
                       <p className="m-0 text-sm">
-                      Give your students the best chance for success with access to 1,500+ educational institutions.
+                      Diversify your campus by attracting qualified students from countries around the world.
+                    
                         </p>
                     </div>
                     <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
