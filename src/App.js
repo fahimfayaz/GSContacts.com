@@ -71,7 +71,7 @@ const App = () => {
 
   return (
     <>
-    <ApolloProvider client={client}>
+    
     <ScrollReveal
       ref={childRef}
       children={() => (
@@ -103,7 +103,7 @@ const App = () => {
         </Switch>
        
       )} />
-      </ApolloProvider>
+      
       </>
   );
 }
