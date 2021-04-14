@@ -66,12 +66,9 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8"></div>
-                <h1 className=" text-color-primary mt-0 mb-12">Confused?</h1>
+                <h1 className=" text-color-primary mt-0 mb-12">CONTACTS is working with more than 200 universities</h1>
                 <p className="m-0">
-                  Interested in studying in the UK, but feel lost with where to
-                  start? Register today and one of our counsellors will get in
-                  contact with you to discuss your options and help you to
-                  decide on the best university and course for you.{" "}
+                 Starting from Australia, Canada, China, Cyprus, Denmark, Finland, Germany, Hungary, India, Malaysia, Netherlands, New Zealand, South Korea, Sweden, Turkey and UK, USA,. {" "}
                 </p>
               </div>
               <div
@@ -97,13 +94,10 @@ const FeaturesSplit = ({
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8"></div>
                 <h1 className="mt-0 mb-12 text-color-primary">
-                  Know what you want?
+                Our philosophy
                 </h1>
                 <p className="m-0">
-                  You know what you want. You know which course or university
-                  you want to pursue, but you're unsure about how to go about
-                  applying? Awesome. We would be glad to help you apply and make
-                  sure that every stage of your application goes smoothly.{" "}
+                 Is that the student comes first. Our counselors work hard to ensure that they help students make an informed decision about their study choices. {" "}
                 </p>
               </div>
               <div
@@ -129,10 +123,10 @@ const FeaturesSplit = ({
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8"></div>
                 <h1 className="mt-0 mb-12 text-color-primary">
-                Already Applied?
+              Free Consultancy
                 </h1>
                 <p className="m-0">
-                You've already applied and feel a bit lost with regards to what is next? Should you apply elsewhere, will you get a scholarship, and how long will it take to find out if you have recieved an offer? This isn't something you want to worry about during your exams. Let one of our counsellors take the weight off your shoulders, and let them deal with it for you. 
+                We strive to be the best Study Abroad Consultants by providing a service to students that is free and unrivaled by any other agencies. For working over 30 years we have placed 20,000 international students in some of the world’s most prestigious Universities & Colleges
                 </p>
               </div>
               <div

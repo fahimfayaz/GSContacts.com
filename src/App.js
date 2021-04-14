@@ -91,9 +91,9 @@ const App = () => {
           <AppRoute exact path={'/uk'} component={UniUK} layout={LayoutDefault} />
           <AppRoute exact path={'/australia'} component={UniAustralia} layout={LayoutDefault} />
           <AppRoute exact path={'/cyprus'} component={UniCyprus} layout={LayoutDefault} /> 
-          <AuthProvider>
+          {/* <AuthProvider> */}
           <AppRoute exact path={'/agent-registration'} component={AgentRegistration} layout={LayoutDefault} /> 
-          </AuthProvider>
+          {/* </AuthProvider> */}
           <AppRoute exact path={'/apply-now'} component={ApplyNow} layout={LayoutDefault} /> 
           <AppRoute exact path={'/indie-uni/:id'} component={IndieUni} layout={LayoutDefault} /> 
           

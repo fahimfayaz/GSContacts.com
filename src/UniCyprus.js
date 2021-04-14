@@ -13,7 +13,7 @@ import HeroCarousel from "react-hero-carousel";
 import SectionHeader from './components/sections/partials/SectionHeader';
 import Button from '@material-ui/core/Button';
 import {Link} from 'react-scroll';
-
+import SimpleAccordion from './UniAccordions/AccordionCyprus'
 class UniCyprus extends Component {
   render() {
     const sectionHeader = {
@@ -74,7 +74,7 @@ class UniCyprus extends Component {
   </div>
 
             <Products />
-
+            <SimpleAccordion/>
             {/* <Basket />
               <Copyright /> */}
           </div>

@@ -205,9 +205,28 @@ const NavMenu = () => {
 
           
             <Grid container spacing={3}>
+          
+            <Nav.Link  href="/agent-registration"> 
+            <Grid item xs={2.5} sm container>
+              <Grid item xs container direction="column" style={{paddingRight:"20px",paddingLeft:"20px"}}>
+                <Grid item xs style={{margin:"auto 0",float:"center",display:"inline",paddingTop:"5px",paddingBottom:"5px"}}>
+                <Image
+                  src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1617937619/student_mm2r0b.svg"
+                  style={{margin:"auto"}}
+                  alt="Features tile icon 01"
+                  width={60}
+                  height={30} />
+                </Grid>
+                <Grid item xs style={{paddingTop:"5px",paddingBottom:"5px"}}>
+                  <span style={{color:"#00a54f"}}>Student</span>
+                </Grid>
+             
+              </Grid>
+            </Grid>
+            </Nav.Link > 
             <Nav.Link  href="/agent-registration"> 
             <Grid item xs={2.5}  sm container>
-              <Grid item xs container direction="column" style={{margin:"auto 0",borderRadius:".3em"}}>
+              <Grid item xs container direction="column" style={{paddingRight:"20px",paddingLeft:"20px"}}>
                 <Grid item xs style={{margin:"auto 0",float:"",display:"inline",paddingTop:"5px",paddingBottom:"5px"}}>
                   <Image
                     src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1617937620/call_y22jrr.png"
@@ -226,25 +245,7 @@ const NavMenu = () => {
             </Nav.Link > 
             <Nav.Link  href="/agent-registration"> 
             <Grid item xs={2.5} sm container>
-              <Grid item xs container direction="column" >
-                <Grid item xs style={{margin:"auto 0",float:"center",display:"inline",paddingTop:"5px",paddingBottom:"5px"}}>
-                <Image
-                  src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1617937619/student_mm2r0b.svg"
-                  style={{margin:"auto"}}
-                  alt="Features tile icon 01"
-                  width={60}
-                  height={30} />
-                </Grid>
-                <Grid item xs style={{paddingTop:"5px",paddingBottom:"5px"}}>
-                  <span style={{color:"#00a54f"}}>Student</span>
-                </Grid>
-             
-              </Grid>
-            </Grid>
-            </Nav.Link > 
-            <Nav.Link  href="/agent-registration"> 
-            <Grid item xs={2.5} sm container>
-              <Grid item xs container direction="column" >
+              <Grid item xs container direction="column"  style={{paddingRight:"20px",paddingLeft:"20px"}} >
                 <Grid item xs style={{margin:"auto 0",float:"center",display:"inline",paddingTop:"5px",paddingBottom:"5px"}}>
                 <Image
                   src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1617937620/university_uanz3o.png"
@@ -262,7 +263,7 @@ const NavMenu = () => {
             </Nav.Link > 
             <Nav.Link  href="/agent-registration"> 
             <Grid item xs={2.5} sm container>
-              <Grid item xs container direction="column" >
+              <Grid item xs container direction="column" style={{paddingRight:"20px",paddingLeft:"20px"}} >
                 <Grid item xs style={{margin:"auto 0",float:"center",display:"inline",paddingTop:"5px",paddingBottom:"5px"}}>
                 <Image
                   src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1617937895/certificate_m0jyqf.png"

@@ -13,8 +13,8 @@ import Products from "./components/ProductsAustralia";
 import HeroCarousel from "react-hero-carousel";
 import Button from '@material-ui/core/Button';
 import {Link} from 'react-scroll';
-
-class UniAustralia extends Component {
+import SimpleAccordion from './UniAccordions/AccordionAus'
+class UniAustralia extends Component {  
   render() {
     const sectionHeader = {
       title: 'Study in Australia',
@@ -73,13 +73,14 @@ class UniAustralia extends Component {
   </div>
          
            <Products/>
-         
+           <SimpleAccordion/>
           
               {/* <Basket />
               <Copyright /> */}
             
       </div>  
       </Provider>
+   
       </>
     );
   }

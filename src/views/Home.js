@@ -12,6 +12,7 @@ import Card from '../cards'
 import 'reset-css'
 import { Parallax } from 'react-scroll-parallax';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Test from '../ItemsCarousel'
 const Home = () => {
 
   return (
@@ -55,8 +56,9 @@ const Home = () => {
       <FeaturesTiles />
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
       <Testimonial topDivider />
-      <Cta split />
-      
+   
+      {/* <Cta split /> */}
+      {/* <Test/> */}
     </>
   );
 }

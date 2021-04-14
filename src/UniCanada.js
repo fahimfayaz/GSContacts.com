@@ -14,6 +14,7 @@ import HeroCarousel from "react-hero-carousel";
 import SectionHeader from './components/sections/partials/SectionHeader';
 import Button from '@material-ui/core/Button';
 import {Link} from 'react-scroll';
+import SimpleAccordion from './UniAccordions/AccordionCN'
 
 class UniCanada extends Component {
   render() {
@@ -77,6 +78,7 @@ class UniCanada extends Component {
           </div>
           <div>
            <Products/>
+           <SimpleAccordion/>
           </div>
           
               {/* <Basket />

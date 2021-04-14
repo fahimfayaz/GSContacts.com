@@ -45,9 +45,9 @@ const FeaturesTiles = ({
   const sectionHeader = {
     title: "Contacts International",
     paragraph:
-      "For over 30 years, we have been the ‘home’ of overseas university applications, assisting self-funded students through the entire university application process. ",
-    paragraph1:
-      "Our services include direct access to hundreds of our university partners, providing all the necessary information and documentation to ensure your successful application to study abroad.",
+      "CONTACTS, based on more than 3 decades of experience in international student recruitment sector, is created to meet the requirements and expectations of 4 target groups: Students, Education Consultants, Service Provider and Institutes. ",
+    // paragraph1:
+    //   "Our services include direct access to hundreds of our university partners, providing all the necessary information and documentation to ensure your successful application to study abroad.",
   };
 
   return (
