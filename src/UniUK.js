@@ -32,7 +32,7 @@ class UniUK extends Component {
         height: "100%",
         objectFit: "cover",
       }}
-      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png"
+      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618473475/big-ben-westminster-bridge-sunset-london-uk_sffqxa.jpg"
       width="100%"
       height="100%"
     />
@@ -43,7 +43,7 @@ class UniUK extends Component {
         <div className="container">
          
        
-        <div id = "overlay" className='sec_hdr_container'>  
+        <div style={{textShadow:"1px 1px rgba(0,0,0,0.3)"}} id = "overlay" className='sec_hdr_container'>  
   <SectionHeader data={sectionHeader} className="padding-top-section-header center-content" />
     <div id = "overlay" className='sec_btn_container' style={{display:"flex",flexDirection:"column",verticalAlign:"center"}}>
       <div style={{padding:"0 30px 0 30px",width:"100%"}}>

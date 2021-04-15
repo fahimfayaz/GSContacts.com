@@ -22,6 +22,7 @@ import firebase from 'firebase'
 import firebaseConfig from './config'
 import UniCanada from './UniCanada';
 import UniUK from './UniUK';
+import UniAmerica from './UniAmerica';
 import UniAustralia from './UniAustralia';
 import UniCyprus from './UniCyprus';
 import StudentServices from './StudentServices'
@@ -91,6 +92,7 @@ const App = () => {
           <AppRoute exact path={'/uk'} component={UniUK} layout={LayoutDefault} />
           <AppRoute exact path={'/australia'} component={UniAustralia} layout={LayoutDefault} />
           <AppRoute exact path={'/cyprus'} component={UniCyprus} layout={LayoutDefault} /> 
+          <AppRoute exact path={'/usa'} component={UniAmerica} layout={LayoutDefault} /> 
           {/* <AuthProvider> */}
           <AppRoute exact path={'/agent-registration'} component={AgentRegistration} layout={LayoutDefault} /> 
           {/* </AuthProvider> */}

@@ -31,7 +31,7 @@ class UniAustralia extends Component {
         height: "100%",
         objectFit: "cover",
       }}
-      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png"
+      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618479039/sydney-4034244_1280_cnmfu0.jpg"
       width="100%"
       height="100%"
     />
@@ -40,17 +40,11 @@ class UniAustralia extends Component {
   </div>
   <Provider store={store}>
         <div className="container">
-  <div id = "overlay" className='sec_hdr_container'>  
+  <div style={{textShadow:"1px 1px rgba(0,0,0,0.3)"}} id = "overlay" className='sec_hdr_container'>  
   <SectionHeader data={sectionHeader} className="padding-top-section-header center-content" />
     <div id = "overlay" className='sec_btn_container' style={{display:"flex",flexDirection:"column",verticalAlign:"center"}}>
       <div style={{padding:"0 30px 0 30px",width:"100%"}}>
-        <a style={{color:"white"}}>Lorem Ipsum is simply dummy text of the printing 
-          and typesetting industry. Lorem Ipsum has been the 
-          industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled 
-          it to make a type specimen book. It has survived not only five 
-          centuries, but also the leap into electronic typesetting, remaining 
-          essentially unchanged. 
+        <a style={{color:"white"}}> 
           </a>
       </div>
         <Button

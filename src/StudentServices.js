@@ -8,6 +8,7 @@ import "./uniPage.css";
 import Hero from "./components/sections/HeroUni.js"
 import Copyright from "./components/Copyright";
 import FeaturesTiles from "./components/sections/FeaturesTilesStudentsServices";
+import FeaturesTilesHowItWorks from "./components/sections/FeaturesTilesStudentsServicesHowItWorks";
 import FeaturesSplit from "./components/sections/FeaturesSplitAboutus";
 import HeroCarousel from "react-hero-carousel";
 import Cta from './components/sections/Cta';
@@ -35,13 +36,11 @@ class StudentServices extends Component {
         <div className="container">
          
        
-          
+            
         <FeaturesTiles />
      <Cta split />
 <FeaturedStudyDestination/>
-            <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
-         
-            <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
+            <FeaturesTilesHowItWorks/>
               {/* <Basket />
               <Copyright /> */}
             

@@ -27,11 +27,11 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}><span style={{display:"inline"}} width="50px"><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301370/icons8-uk-news-50_tnflm9.png"/>{" "}<span style={{marginBottom:"30px!important"}}>About United Kingdom</span></span></Typography>
+          <Typography className={classes.heading}><span style={{display:"inline"}} width="50px"><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301370/icons8-uk-news-50_tnflm9.png"/>{" "}<span style={{marginBottom:"30px!important"}}>About United States</span></span></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          United Kingdom is the most popular study destination in the world because of it’s modern & conducive learning environment and quality of education that provide a vibrant, creative and challenging environment to develop versatility in your attitude . UK qualifications are recognized and respected throughout the world.
+          USA is the most popular study destination in the world because of it’s modern & conducive learning environment and quality of education that provide a vibrant, creative and challenging environment to develop versatility in your attitude . UK qualifications are recognized and respected throughout the world.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -56,7 +56,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-passport-50_olt35v.png"/>{" "}Student Visa Requirements for the Uk </Typography>
+          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-passport-50_olt35v.png"/>{" "}Student Visa Requirements for the United States </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -71,7 +71,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-study-50_bcyszh.png"/>{" "}Study Option in UK</Typography>
+          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-study-50_bcyszh.png"/>{" "}Study Option in United States</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -86,7 +86,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-payroll-50_dauuve.png"/>{" "}Employment prospects in the UK</Typography>
+          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-payroll-50_dauuve.png"/>{" "}Employment prospects in the United States</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

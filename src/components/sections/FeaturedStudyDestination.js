@@ -58,7 +58,7 @@ const FeaturedStudyDestination = ({
             <div style-={{marginLeft:"50px", marginRight:"50px"}} className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                
-               <MediaCard title="Australia" description="Top-ranked education in a multicultural environment with breathtaking landscapes, beautiful beaches, and a growing economy." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618425354/uluru-2058380_640_or5a13.jpg"/>
+               <MediaCard title="Australia" description="Top-ranked education in a multicultural environment with breathtaking landscapes, beautiful beaches, and a growing economy." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618425354/uluru-2058380_640_or5a13.jpg" href="/australia"/>
 
 
               </div>
@@ -67,7 +67,7 @@ const FeaturedStudyDestination = ({
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                
-              <MediaCard title="America" description="Top-ranked education in a multicultural environment with breathtaking landscapes, beautiful beaches, and a growing economy." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618425354/uluru-2058380_640_or5a13.jpg"/>
+              <MediaCard title="America" description="Globally renowned education from the highest-ranked universities and colleges. Chosen by over a million international students every year." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618425354/city-336708_640_wg8kt7.jpg" href="/america" />
 
 
               </div>
@@ -75,7 +75,7 @@ const FeaturedStudyDestination = ({
 
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
-              <MediaCard title="Australia" description="Top-ranked education in a multicultural environment with breathtaking landscapes, beautiful beaches, and a growing economy." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618425354/uluru-2058380_640_or5a13.jpg"/>
+              <MediaCard title="Canada" description="Quality education at low cost. Work during study, post-study work permits, and pro-immigration policies. Diverse, safe, and inclusive." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618425354/toronto-3112508_640_dli9am.jpg" href="/canada"/>
 
 
                
@@ -84,7 +84,7 @@ const FeaturedStudyDestination = ({
 
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
-              <MediaCard title="Australia" description="Top-ranked education in a multicultural environment with breathtaking landscapes, beautiful beaches, and a growing economy." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618425354/uluru-2058380_640_or5a13.jpg"/>
+              <MediaCard title="United Kingdom" description="World-class universities in the heart of Europe. Shorter study duration to fast-track your career and reduce costs." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/c_scale,h_401/v1618462619/big-ben-westminster-bridge-sunset-london-uk_fzlfyq.jpg" href="/uk"/>
 
 
                
@@ -92,7 +92,7 @@ const FeaturedStudyDestination = ({
             </div>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
-              <MediaCard title="Australia" description="Top-ranked education in a multicultural environment with breathtaking landscapes, beautiful beaches, and a growing economy." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618425354/uluru-2058380_640_or5a13.jpg"/>
+              <MediaCard title="Cyprus" description="Cyprus spends more than 7% of its GDP on education, the third-highest share in the European Union after Denmark and Sweden." Image="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618462070/door-2096367_640_o9scvc.jpg" href="/cyprus"/>
 
 
                

@@ -44,11 +44,8 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title:
-      "Partner with Contacts International for an exceptional application to enrolment experience",
-    paragraph:
-      "Contacts International is a two sided EdTech marketplace for international student recruitment.  ",
-    paragraph1:
-      "Free for recruitment partners. Contacts International enables partners to grow their profitability, size and market share.",
+      "Why Contacts International?",
+   
   };
   
   return (
@@ -71,7 +68,7 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="text-color-primary mt-0 mb-8">
+                  <h4 className="c3f51b5 mt-0 mb-8">
                   Simple Application
                   </h4>
                   
@@ -92,7 +89,7 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="text-color-primary mt-0 mb-8">
+                  <h4 className="c3f51b5 mt-0 mb-8">
                   Admission Counselling
                   </h4>
                   
@@ -113,7 +110,7 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="text-color-primary mt-0 mb-8">
+                  <h4 className="c3f51b5 mt-0 mb-8">
                   1,500+ Schools
                   </h4>
                 </div>
@@ -133,7 +130,7 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="text-color-primary mt-0 mb-8">
+                  <h4 className="c3f51b5 mt-0 mb-8">
                   Financial Guidance
                   </h4>
                
@@ -157,7 +154,7 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className=" text-color-primary mt-0 mb-8">
+                  <h4 className=" c3f51b5 mt-0 mb-8">
                   Visa Assistance
                   </h4>
                   
@@ -181,7 +178,7 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className=" text-color-primary mt-0 mb-8">
+                  <h4 className=" c3f51b5 mt-0 mb-8">
                   Continuous Support
                   </h4>
                  
