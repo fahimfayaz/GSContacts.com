@@ -14,7 +14,7 @@ class Aboutus extends Component {
   render() {
     return (
       <>
-      <div className="HeroCarousel">
+      <div  className="HeroCarousel">
    <HeroCarousel >
      <img
       style={{
@@ -22,15 +22,18 @@ class Aboutus extends Component {
         height: "500px",
         objectFit: "cover",
       }}
-      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png"
+      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618555755/img3_f7yyzn.jpg"
       width="100%"
       height="500px"
     />
     
   </HeroCarousel>
   </div>
+  <div id = "overlay">  
+  <Hero className="illustration-section-01" />
+  </div>
       <Provider store={store}>
-        <div className="container">
+        <div  className=" padding-top container">
          
        
           

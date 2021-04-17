@@ -43,25 +43,25 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: "Contacts International",
+    title: "",
     paragraph:
-      "CONTACTS, based on more than 3 decades of experience in international student recruitment sector, is created to meet the requirements and expectations of 4 target groups: Students, Education Consultants, Service Provider and Institutes. ",
+      " ",
     // paragraph1:
     //   "Our services include direct access to hundreds of our university partners, providing all the necessary information and documentation to ensure your successful application to study abroad.",
   };
 
   return (
-    <section {...props} className={outerClasses}>
-      <div className="container">
+    <section   {...props} className={outerClasses}>
+      <div  className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
-          <div className={tilesClasses}>
+          {/* <SectionHeader data={sectionHeader} className="center-content" /> */}
+          <div  className={tilesClasses}>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className=" mb-16">
                     <Image
-                      src={require("./../../assets/images/feature-tile-icon-01.svg")}
+                      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1617937620/call_y22jrr.png"
                       alt="Features tile icon 01"
                       width={64}
                       height={64}
@@ -88,9 +88,9 @@ const FeaturesTiles = ({
             >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className=" mb-16">
                     <Image
-                      src={require("./../../assets/images/feature-tile-icon-02.svg")}
+                      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-passport-50_olt35v.png"
                       alt="Features tile icon 02"
                       width={64}
                       height={64}
@@ -117,9 +117,9 @@ const FeaturesTiles = ({
             >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className=" mb-16">
                     <Image
-                      src={require("./../../assets/images/feature-tile-icon-03.svg")}
+                      src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1617937895/certificate_m0jyqf.png"
                       alt="Features tile icon 03"
                       width={64}
                       height={64}

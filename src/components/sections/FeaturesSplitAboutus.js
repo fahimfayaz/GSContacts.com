@@ -108,7 +108,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/features-split-image-02.png")}
+                  src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618555004/teacher-99741_1280_g0yum2.jpg"
                   alt="Features split 02"
                   width={528}
                   height={396}
@@ -137,7 +137,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/features-split-image-02.png")}
+                  src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618555669/office-meeting_rhkrge.png"
                   alt="Features split 02"
                   width={528}
                   height={396}

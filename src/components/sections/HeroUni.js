@@ -63,10 +63,10 @@ const Hero = ({
     }}  className="container-sm">
         <div  className={innerClasses}>
           <div  className="unihero-content">
-            <h3 className="font-color-uni-hero  overlay mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Choose from the widest array of Universities
+            <h4 className="font-color-uni-hero  overlay mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
+            CONTACTS, based on more than 3 decades of experience in international student recruitment sector, is created to meet the requirements and expectations of 4 target groups: Students, Education Consultants, Service Provider and Institutes.
               {/* <span className="text-color-primary">Start your Journey With us today</span> */}
-            </h3>
+            </h4>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
               <span className="text-color-primary"></span>
