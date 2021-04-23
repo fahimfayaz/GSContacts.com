@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 80px 60px;
-  background: #002e5a;
+  background: #242423;
   margin-top:20px;
   @media (max-width: 1000px) {
     padding: 70px 30px;
@@ -40,7 +40,7 @@ export const Link = styled.a`
   font-size: 18px;
   text-decoration: none;
   &:hover {
-      color: #ff9c00;
+      color: rgb(0,165,79);
       transition: 200ms ease-in;
   }
 `;

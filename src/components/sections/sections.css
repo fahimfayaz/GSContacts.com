@@ -1,11 +1,11 @@
 .container-sm{
-    float: center;
     overflow: auto;
-    padding: 0px;
+    padding: 100px;
+    margin-left: 50%;
 }
 .hero-content{
     width: 100%!important;
-    margin: 0 auto;
+    z-index:-10;
 }
 .topline{
     color: rgb(0,165,79);
@@ -14,7 +14,6 @@
     letter-spacing: .5px;
     margin-bottom: 15px;
     text-align: left;
-    text-shadow: 1px 1px rgba(0,0,0,0.8);
 }
 .headline{
     margin-bottom: 15px;
@@ -23,19 +22,17 @@
     line-height: 1.2;
     color: white;
     margin-top: -15px;
-    text-shadow: 1px 1px rgba(0,0,0,0.8);
 }
 .container-tagline{
     float: left;
 }
 .tagline{
-    text-align: center;
+    text-align: left;
     color: white;
     font-size: 18px;
-    text-shadow: 1px 1px rgba(0,0,0,0.8);
 }
 .hero-btn{
-    float: center;
+    float: left;
 }
 .btn-readmore{
     color:'white';
@@ -68,27 +65,25 @@
         padding-left: 60px;
     }
     .hero-content{
-        width: 100%;
+        width: 80%;
     }
     .hero-content > .topline{
         font-size: 20px;
-        text-align: center;
+        text-align: left;
     }
     .hero-content > .h1{
         font-size: 35px;
-        text-align: center;
+        text-align: left;
     }
     .container-xs > .p{
         font-size: 12px;
-        text-align: center;
+        text-align: left;
     }
     .container-tagline{
         float: center;
     }
 }
-.c3f51b5{
-color : #3f51b5;
-}
+
 @media screen and (max-width:500px){
     .container-sm{
         float: center;

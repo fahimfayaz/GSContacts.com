@@ -58,9 +58,9 @@ const FeaturesSplit = ({
 
   return (
     <section {...props} className={outerClasses}>
-      <div className="section-header container">
+      <div id="section3" className="section-header container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          {/* <SectionHeader data={sectionHeader} className="center-content"/> */}
           <div className={splitClasses}>
             <div className="split-item">
               <div
@@ -68,9 +68,10 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8"></div>
-                <h1 className=" text-color-primary mt-0 mb-12">
+                <SectionHeader data={sectionHeader} className="center-content" style={{paddingBottom:"10px"}}/>
+                {/* <h1 className=" text-color-primary mt-0 mb-12" style={{color:"rgb(0,165,79)"}}>
                   Search from the widest array of universities
-                </h1>
+                </h1> */}
                
                 <h4><HomeUniSearch/>
                 </h4>
@@ -88,7 +89,7 @@ const FeaturesSplit = ({
                   src={require("./../../assets/images/features-split-image-01.png")}
                   alt="Features split 01"
                   width={528}
-                  height={396}
+                  height={436}
                 />
               </div>
             </div>     

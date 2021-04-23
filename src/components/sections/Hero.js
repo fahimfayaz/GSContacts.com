@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
-import ButtonGroup from "../elements/ButtonGroup";
-import Button from "../elements/Button";
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import Image from "../elements/Image";
 import Modal from "../elements/Modal";
 import "./sections.css"
+import Fade from 'react-reveal/Fade';
+import {Link} from 'react-scroll';
+import ButtonGroup from "../elements/ButtonGroup";
 const propTypes = {
   ...SectionProps.types,
 };
@@ -13,7 +16,13 @@ const propTypes = {
 const defaultProps = {
   ...SectionProps.defaults,
 };
-
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+}));
 const Hero = ({
   className,
   topOuterDivider,
@@ -50,13 +59,13 @@ const Hero = ({
     topDivider && "has-top-divider",
     bottomDivider && "has-bottom-divider"
   );
-
+  const classes = useStyles();
   return (
     <section {...props} className={outerClasses}>
       <div
        
-        className="container-sm"
-      >
+        className="container-sm" >
+        <Fade bottom>
         <div className={innerClasses}>
           <div className="hero-content">
             <h3
@@ -100,6 +109,7 @@ const Hero = ({
             videoTag="iframe"
           />
         </div>
+        </Fade>
       </div>
     </section>
   );

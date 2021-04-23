@@ -1,0 +1,22 @@
+.body{
+    background-color: rgb(49, 38, 165)!important;
+    padding: 0;
+  }
+  .top_link {
+    color: rgb(231, 230, 230)!important;
+    text-align: center;
+  }
+  .top_link:hover{
+      color: white;
+  }
+  .lang_link {
+      color: rgb(255, 255, 255)!important;
+      text-decoration: white;
+  }
+.top_link_meeting{
+    background: rgb(0,165,79);
+    color: white;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}

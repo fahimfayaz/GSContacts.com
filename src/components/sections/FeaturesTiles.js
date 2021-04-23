@@ -72,7 +72,7 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: 'Contacts International',
-    paragraph: 'For over 30 years, we have been the ‘home’ of overseas university applications, assisting self-funded students through the entire university application process. Global Study Contacts is created to meet the requirements and expectations of 4 target groups: Students, Education Consultants, Service Provider and Institutes. '
+    paragraph: 'For over 30 years, we have been the ‘home’ of overseas university applications, assisting self-funded students through the entire university application process. '
   };
 
   return (
@@ -80,7 +80,7 @@ const FeaturesTiles = ({
       {...props}
       className={outerClasses}
     >
-      <div id="section2" className="container">
+      <div id="section2" className="container" >
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="padding-top center-content"/>
           <div className={tilesClasses}>
@@ -90,7 +90,7 @@ const FeaturesTiles = ({
                 <Card className={classes.root}>
                   <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px', padding: '0 20px 0 20px'}}>
                     <div className="features-tiles-item-header">
-                      <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'240px',maxHeight:'160px'}}>
+                      <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'160px',maxHeight:'160px'}}>
                           <Image
                             src={require('./../../assets/images/call.png')}
                             alt="Features tile icon 01"
@@ -103,7 +103,7 @@ const FeaturesTiles = ({
                     Agents
                         </h4>
                       <p className="m-0 text-sm">
-                      Give your students the best chance for success with access to 1,500+ educational institutions.
+                      Diversify your campus by attracting qualified students from countries around the world.
                         </p>
                     </div>
                     <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
@@ -119,7 +119,7 @@ const FeaturesTiles = ({
                 <Card className={classes.root}>
                   <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px',padding: '0 20px 0 20px'}}>
                     <div className="features-tiles-item-header">
-                      <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'240px',maxHeight:'160px'}}>
+                      <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'160px',maxHeight:'160px'}}>
                         <Image
                           src={require('./../../assets/images/student.svg')}
                           alt="Features tile icon 02"
@@ -143,11 +143,7 @@ const FeaturesTiles = ({
               </Fade>
             </div>
 
-         
-          </div>
-          <div className={tilesClasses}>
-
-          <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
             <Fade right>
                 <Card className={classes.root}>
                   <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px',padding: '0 20px 0 20px'}}>
@@ -165,44 +161,11 @@ const FeaturesTiles = ({
                       Institutes
                         </h4>
                       <p className="m-0 text-sm">
-                      Diversify your campus by attracting qualified students from countries around the world.
-                    
+                      Give your students the best chance for success with access to 1,500+ educational institutions.
                         </p>
                     </div>
                     <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
                       <a>Read More &#43;</a>
-                    </div>
-                  </div>
-                </Card>
-              </Fade>
-            </div>
-
-   
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-            <Fade right>
-                <Card className={classes.root}>
-                  <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px',padding: '0 20px 0 20px'}}>
-                    <div className="features-tiles-item-header">
-                      <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'160px',maxHeight:'160px'}}>
-                        <Image
-                          src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1617937895/certificate_m0jyqf.png"
-                          alt="Features tile icon 03"
-                          width={164}
-                          height={164} />
-                      </div>
-                    </div>
-                    <div className="features-tiles-item-content">
-                      <h4 className="mt-0 mb-8" style={{color:"#1a9657"}}>
-                     Service Provider
-                        </h4>
-                      <p className="m-0 text-sm">
-                      We connect your transport, consulting and visa processing business to a large customer base
-                    
-                        </p>
-                    </div>
-                    <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
-                      <a href="">Read More &#43;</a>
                     </div>
                   </div>
                 </Card>

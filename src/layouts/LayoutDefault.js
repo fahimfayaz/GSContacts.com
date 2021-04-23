@@ -1,15 +1,15 @@
 import React from 'react';
+import TopNavMenu from '../components/layout/TopNav'
 import NavMenu from '../components/layout/Navbar2';
-import FooterReal from '../components/layout/FooterReal.js'
 
 const LayoutDefault = ({ children }) => (
   <>
+<TopNavMenu/>
 <NavMenu/>
     {/* <Header navPosition="right" className="reveal-from-bottom" /> */}
-    <main className="site-content">
+    <main className="site-content" style={{overflow:"hidden"}}>
       {children}
     </main>
-    <FooterReal />
   </>
 );
 

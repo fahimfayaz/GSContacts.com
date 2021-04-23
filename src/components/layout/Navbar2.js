@@ -6,21 +6,22 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Nav from "react-bootstrap/Nav";
 import Logo from "./partials/Logo";
-import Box from '@material-ui/core/Box';
 import style1 from "./navBar.module.css";
-import Popover from '@material-ui/core/Popover';
+import {Link} from 'react-scroll';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Typography from '@material-ui/core/Typography';
 import { transform } from "lodash";
-import { makeStyles } from '@material-ui/core/styles';
-import { ScatterPlot } from "@material-ui/icons";
+import { ScatterPlot, Search } from "@material-ui/icons";
 import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import Popover from '@material-ui/core/Popover';
+import Box from '@material-ui/core/Box';
 import Image from "../elements/Image";
+//import SearchBar from "../elements/HomeSearch"
 // class NavMenu extends Component{
 
 // render(){
@@ -32,36 +33,23 @@ import Image from "../elements/Image";
 // const hideDropdown = e => {
 //     setShow(false);
 // }
-
-const useStyles = makeStyles((theme) => ({
-  typography: {
-    padding: theme.spacing(2),
-  },
-}));
 const NavMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-  const classes = useStyles();
+
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };  
+
   const handleClose = () => {
     setAnchorEl(null);
   };
-
-
-  const id = open ? 'simple-popover' : undefined;
-
   return (
     <>
+    
       <Navbar
-        className="nav-font sticky-top"
         collapseOnSelect
         expand="lg"
-        bg="transparent"
         variant="light"
         sticky="top"
         fixedTop
@@ -70,15 +58,28 @@ const NavMenu = () => {
         // onMouseLeave={hideDropdown}
       >
         <Navbar.Brand href="/">
-          <Logo />
+            <Logo />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
+        <Navbar.Collapse id="responsive-navbar-nav" style={{marginTop:"10px"}}>
+          <Nav className="mr-auto" style={{marginLeft:"10%"}}>
             <Nav.Link className={style1.ani_link} href="/">Home</Nav.Link>
-            <Nav.Link className={style1.ani_link} href="/about-us">Why Contacts</Nav.Link>
-
-            <NavDropdown className={style1.ani_link} title="Study Abroad" id="collapsible-nav-dropdown">
+            <Nav.Link className={style1.ani_link} href="/about-us">About Us</Nav.Link>
+          <Nav.Link  className={style1.ani_link}>  <Link 
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            
+             to="study-abroad">Study Abroad</Link></Nav.Link>
+            <Nav.Link className={style1.ani_link} href="#services"><Link 
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            
+             to="services">Services</Link></Nav.Link>
+            {/* <NavDropdown className={style1.ani_link} title="Study Abroad" id="collapsible-nav-dropdown">
               <span >
               <NavDropdown.Item className="dropdown-box" href="/canada">
               Study in Canada
@@ -97,8 +98,8 @@ const NavMenu = () => {
 
               </span>
               
-            </NavDropdown>
-            <NavDropdown className={style1.ani_link}title="Services" id="collapsible-nav-dropdown">
+            </NavDropdown> */}
+            {/* <NavDropdown className={style1.ani_link} title="Services" id="collapsible-nav-dropdown">
               <span>
                 <NavDropdown.Item className="dropdown-box" href="/recruitment-partners">
                   Recruitment Partners
@@ -113,9 +114,10 @@ const NavMenu = () => {
                 </NavDropdown.Item>
              
               </span>
-            </NavDropdown>
-            <Nav.Link className={style1.ani_link} href="/institute-partners">Institute Partners</Nav.Link>
+            </NavDropdown> */}
+           
             <Nav.Link className={style1.ani_link} href="/events">Events</Nav.Link>
+            <Nav.Link className={style1.ani_link} href="/about-us">Resources</Nav.Link>
           </Nav>
           
           <div style={{float: "right", marginRight: "40px"}}>
@@ -130,7 +132,7 @@ const NavMenu = () => {
                 right ="100%"
                 onClick={handleMenu}
               >
-                <AccountCircle style={{transform: 'Scale(1.5)'}} />
+                <AccountCircle style={{transform: 'Scale(1.5)',color:'rgb(0,165,79)'}} />
               </IconButton>           
               <Menu
                 id="menu-appbar"
@@ -173,17 +175,7 @@ const NavMenu = () => {
       )}
     </PopupState></MenuItem>
                 <MenuItem onClick={handleClose}>
-                  {/* <Nav.Link eventKey={2} href="/agent-registration">
-                    <Typography
-                      className={style1.menuItemFont}
-                      variant="primary"
-                    
-                    >
-                    Register
-                    </Typography>
-                  
-                  </Nav.Link> */}
-                 <PopupState variant="popover" popupId="demo-popup-popover">
+                <PopupState variant="popover" popupId="demo-popup-popover">
       {(popupState) => (
         <div>
           <Button variant="contained" color="primary" {...bindTrigger(popupState)}>
@@ -285,9 +277,7 @@ const NavMenu = () => {
           </Popover>
         </div>
       )}
-    </PopupState>
-                  
-                  </MenuItem>
+    </PopupState></MenuItem>
               </Menu> 
             </Nav>
           </div>  

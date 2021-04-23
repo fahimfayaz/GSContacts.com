@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import './sections.css'
 import { Link } from "react-router-dom";
 import Image from '../elements/Image';
-import EmployeeForm from '../../HomeUniSearchForm/EmployeeForm';
+
 class HomeUniSearch extends Component{
   constructor(props) {
     super(props);
@@ -22,23 +22,22 @@ render (){
 return(
 <>
 
-<EmployeeForm/>
-
-{/* <Form>
+<Form>
   
-  <Form.Group controlId="exampleForm.SelectCustomSizeLg">
+  <Form.Group controlId="exampleForm.SelectCustomSizeLg" style={{width:"79%"}}>
     <Form.Label><div className="select-country">Select a country</div></Form.Label>
-    <Form.Control as="select" size="lg" custom>
+    <Form.Control as="select" size="lg" custom style={{width:"79%"}}>
       <option>Canada</option>
       <option>Australia</option>
       <option>Cyprus</option>
       <option>U.K.</option>
     </Form.Control>
-  </Form.Group>
-  <Button  className="right-button" 
+    <Button  className="right-button" 
             style={{
               backgroundColor:"#00a54f",  
-              height:"50px"  
+              height:"60px", 
+              width:"20%",
+              borderRadius:".3em" 
             }}
             type="submit"> <Link
                         className="menu-text-color"
@@ -50,10 +49,11 @@ return(
                             alt="Features tile icon 01"
                             width={25}
                             height={25} />
-                        <span style={{color:"white"}}>Search</span>
+                        {/* <span style={{color:"white"}}>Search</span> */}
                       </div>
                       </Link></Button>
-</Form> */}
+  </Form.Group>
+</Form>
 
 </>
 

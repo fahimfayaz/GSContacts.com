@@ -13,7 +13,7 @@ class Products extends Component {
   render() {
     const productItems = this.props.products.map((product) => (
 
-      <div id="section-canada-cards"className="split-item-content fw-600 tt-u mb-8" >
+      <div id="section-canada-cards" className="split-item-content fw-600 tt-u mb-8" >
 
       
           <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
