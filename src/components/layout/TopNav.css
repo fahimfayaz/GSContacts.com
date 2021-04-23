@@ -11,12 +11,14 @@
   }
   .lang_link {
       color: rgb(255, 255, 255)!important;
-      text-decoration: white;
+      text-decoration-color: white;
+      text-align: center;
   }
 .top_link_meeting{
     background: rgb(0,165,79);
-    color: white;
-    margin-top: -10px;
+    color: white!important;
+    margin-top: -5px;
     margin-bottom: 0px;
-    padding-top: 20px;
+    padding-top: 15px;
+    text-align: center;
 }

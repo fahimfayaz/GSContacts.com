@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {useEffect, useState,Component} from "react";
 import { Provider } from "react-redux";
 import SectionHeader from './components/sections/partials/SectionHeader';
 import Filter from "./components/Filter";
@@ -14,13 +14,14 @@ import HeroCarousel from "react-hero-carousel";
 import Button from '@material-ui/core/Button';
 import {Link} from 'react-scroll';
 import SimpleAccordion from './UniAccordions/AccordionAus'
+
 class UniAustralia extends Component {  
   render() {
     const sectionHeader = {
       title: 'Study in Australia',
       paragraph: ' '
     };
-  
+    
     return (
       <>
        <div className="HeroCarousel">

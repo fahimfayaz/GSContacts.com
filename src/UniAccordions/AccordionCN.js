@@ -27,7 +27,7 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}><span style={{display:"inline"}} width="50px"><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301370/icons8-uk-news-50_tnflm9.png"/>{" "}<span style={{marginBottom:"30px!important"}}>About Canada</span></span></Typography>
+          <Typography className={classes.heading}><span style={{display:"inline"}} width="50px"><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301370/icons8-uk-news-50_tnflm9.png"/>{" "}<span style={{verticalAlign:"50%"}}>About Canada</span></span></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -41,7 +41,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-money-50_t4zgdo.png"/>{" "}Tuition Fees, Living Cost  &  Scholarship</Typography>
+          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-money-50_t4zgdo.png"/>{" "}<span style={{verticalAlign:"50%"}}>Tuition Fees, Living Cost  &  Scholarship</span></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -56,7 +56,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-passport-50_olt35v.png"/>{" "}Student Visa Requirements for the Canada </Typography>
+          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-passport-50_olt35v.png"/>{" "}<span style={{verticalAlign:"50%"}}>Student Visa Requirements for the Canada </span></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -71,7 +71,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-study-50_bcyszh.png"/>{" "}Study Option in Canada</Typography>
+          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-study-50_bcyszh.png"/>{" "}<span style={{verticalAlign:"60%"}}>Study Option in Canada</span></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -86,7 +86,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-payroll-50_dauuve.png"/>{" "}Employment prospects in the Canada</Typography>
+          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-payroll-50_dauuve.png"/>{" "}<span style={{verticalAlign:"50%"}}>Employment prospects in the Canada</span></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -101,7 +101,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-airplane-departure-50_dz8p1y.png"/>{" "}Before You Leave</Typography>
+          <Typography className={classes.heading}><img style={{display:"inline"}} src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618301369/icons8-airplane-departure-50_dz8p1y.png"/>{" "}<span style={{verticalAlign:"50%"}}>Before You Leave</span></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

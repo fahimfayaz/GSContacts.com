@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Nav from "react-bootstrap/Nav";
 import Logo from "./partials/Logo";
-import style1 from "./navBar.module.css";
+import style1 from "./navbar.module.css";
 import {Link} from 'react-scroll';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -21,6 +21,7 @@ import Grid from '@material-ui/core/Grid';
 import Popover from '@material-ui/core/Popover';
 import Box from '@material-ui/core/Box';
 import Image from "../elements/Image";
+import "./TopNav.css";
 //import SearchBar from "../elements/HomeSearch"
 // class NavMenu extends Component{
 
@@ -46,8 +47,27 @@ const NavMenu = () => {
   };
   return (
     <>
-    
+    <div className="nav-font sticky-top">
+      <Navbar className="body" collapseOnSelect expand="lg">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto" >
+        <Nav.Link className="top_link" href="#services">Service</Nav.Link>
+        <Nav.Link className="top_link" href="#solution_center">Solution Center</Nav.Link>
+        </Nav>
+        <Nav>
+        <NavDropdown className="lang_link" title="English" id="collasible-nav-dropdown">
+            <NavDropdown.Item className="dropdown-box" href="#action/3.1">English</NavDropdown.Item>
+            <NavDropdown.Item className="dropdown-box" href="#action/3.2">Español</NavDropdown.Item>
+            <NavDropdown.Item className="dropdown-box" href="#action/3.3">Russian</NavDropdown.Item>
+        </NavDropdown>
+        <Nav.Link className="top_link_meeting" href="#deets">Schedule a Meeting</Nav.Link>
+        </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+
       <Navbar
+        //className="nav-font sticky-top"
         collapseOnSelect
         expand="lg"
         variant="light"
@@ -60,7 +80,7 @@ const NavMenu = () => {
         <Navbar.Brand href="/">
             <Logo />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav" style={{marginTop:"10px"}}>
           <Nav className="mr-auto" style={{marginLeft:"10%"}}>
             <Nav.Link className={style1.ani_link} href="/">Home</Nav.Link>
@@ -283,6 +303,7 @@ const NavMenu = () => {
           </div>  
         </Navbar.Collapse>
       </Navbar>
+      </div>
     </>
   );
 };

@@ -1,6 +1,9 @@
 .body{
   background-color: white;
 }
+#responsive-navbar-nav{
+    z-index: 4!important;
+}
 .ani_link {
     position: relative!important;
     cursor: pointer!important;
