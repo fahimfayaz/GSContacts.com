@@ -12,12 +12,15 @@ import Hero from "./components/sections/HeroUni.js";
 import Copyright from "./components/Copyright";
 import HeroCarousel from "react-hero-carousel";
 import db from './config';
+import Blog from "./IndieUniBlogsPage/Blog"
 
-
-export default function IndieUni() {
+export default function IndieUni(props) {
     const [blogs,setBlogs]=useState([])
+    var id = toString(props.match.params.id)
+    console.log(typeof props.match.params.id)
     const fetchBlogs=async()=>{
-      const response=db.collection('universities');
+      const response=db.collection('universities').where("id", "==", props.match.params.id)
+      console.log(response)
       const data=await response.get();
       data.docs.forEach(item=>{
        setBlogs([...blogs,item.data()])
@@ -30,7 +33,33 @@ console.log(blogs)
   return (
 <> 
 
+<HeroCarousel>
+    
+    
+    <img
+     style={{
+       width: "100%",
+       height: "100%",
+       objectFit: "cover",
+     }}
+     src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png"
+     width="100%"
+     height="100%"
+   />
+   
+   <img
+   style={{
+     width: "100%",
+     height: "100%",
+     objectFit: "cover",
+   }}
+     src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1615099230/hero1_lva0ux.png"
+     width="100%"
+     height="100%"
+   />
 
+
+ </HeroCarousel>
 <Provider store={store}>
           <div className="padding-top container">
             <div className="justify-content-center row">
@@ -49,6 +78,7 @@ console.log(blogs)
               <div className="col-md-9">
                 <div className="justify-content-center section">
                   <div className="padding"></div>
+                  <Blog/>
                   <div className="padding-top"><EmployeeForm/></div>
                 </div>
               </div>

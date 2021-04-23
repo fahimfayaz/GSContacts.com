@@ -5,6 +5,7 @@ import Checkbox from "./Checkbox";
 // import DatePicker from "./DatePicker";
 import Button from "./Button";
 import Password from "./Password";
+import InputHeight from "./InputHeight";
 
 
 const Controls = {
@@ -13,7 +14,8 @@ const Controls = {
     Select,
     Checkbox,
     Password,
-    Button
+    Button,
+    InputHeight
 
 }
 
