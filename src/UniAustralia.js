@@ -15,16 +15,23 @@ import Button from '@material-ui/core/Button';
 import {Link} from 'react-scroll';
 import SimpleAccordion from './UniAccordions/AccordionAus'
 
-class UniAustralia extends Component {  
-  render() {
+function UniAustralia() {
     const sectionHeader = {
       title: 'Study in Australia',
       paragraph: ' '
     };
+    const [offsetY, setOffsetY]= useState(0);
+    const handleScroll = ()=> setOffsetY(window.pageYOffset);
     
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+    
+      return() => window.removeEventListener("scroll", handleScroll); 
+    },[]);
+
     return (
       <>
-       <div className="HeroCarousel">
+       <div className="HeroCarousel" style={{transform:`translateY(${offsetY * -0.6}px)`, overflow:"hidden!important"}}>
    <HeroCarousel >
      <img
       style={{
@@ -79,6 +86,6 @@ class UniAustralia extends Component {
       </>
     );
   }
-}
+
 
 export default UniAustralia;

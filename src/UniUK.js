@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {useEffect, useState} from "react";
 import { Provider } from "react-redux";
 import Products from "./components/Products";
 import Filter from "./components/Filter";
@@ -15,16 +15,24 @@ import SectionHeader from './components/sections/partials/SectionHeader';
 import Button from '@material-ui/core/Button';
 import {Link} from 'react-scroll';
 import SimpleAccordion from './UniAccordions/AccordionUK'
-class UniUK extends Component {
-  render() {
+function UniUK() {
+  
     const sectionHeader = {
       title: 'Study in UK',
       paragraph: ' '
     };
-  
+    const [offsetY, setOffsetY]= useState(0);
+    const handleScroll = ()=> setOffsetY(window.pageYOffset);
+    
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+    
+      return() => window.removeEventListener("scroll", handleScroll); 
+    },[]);
+
     return (
       <>
-       <div className="HeroCarousel">
+       <div className="HeroCarousel" style={{transform:`translateY(${offsetY * -0.6}px)`, overflow:"hidden!important"}}>
    <HeroCarousel >
      <img
       style={{
@@ -80,7 +88,6 @@ class UniUK extends Component {
       </Provider>
       </>
     );
-  }
 }
 
 export default UniUK;

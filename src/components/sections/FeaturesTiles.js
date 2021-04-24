@@ -7,11 +7,12 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import { makeStyles } from '@material-ui/core/styles';
 import Fade from 'react-reveal/Fade';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 300,
-    maxHeight:500,
+    maxWidth: 400,
+    minHeight:400,
     background: 'rgb(233,232,232)',
     background: 'linear-gradient(90deg, rgba(233,232,232,1) 0%, rgba(223,255,249,1) 52%, rgba(230,230,230,1) 100%)',
     borderRadius:'0.6em',
@@ -84,93 +85,128 @@ const FeaturesTiles = ({
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="padding-top center-content"/>
           <div className={tilesClasses}>
-
-            <div className="tiles-item" data-reveal-delay="200">
-              <Fade left>
-                <Card className={classes.root}>
-                  <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px', padding: '0 20px 0 20px'}}>
-                    <div className="features-tiles-item-header">
-                      <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'160px',maxHeight:'160px'}}>
-                          <Image
-                            src={require('./../../assets/images/call.png')}
-                            alt="Features tile icon 01"
-                            width={164}
-                            height={164} />
+          <Grid container spacing={2}>
+            <Grid item lg={3} md={6} sm={6} xs={12}>
+                <div data-reveal-delay="200">
+                  <Fade left>
+                    <Card className={classes.root}>
+                      <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px', padding: '0 5px 0 5px'}}>
+                        <div className="features-tiles-item-header">
+                          <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'90px',maxHeight:'90px'}}>
+                              <Image
+                                src={require('./../../assets/images/call.png')}
+                                alt="Features tile icon 01"
+                                width={90}
+                                height={100} />
+                          </div>
+                        </div>
+                        <div className="features-tiles-item-content">
+                          <h4 className="mt-0 mb-8" style={{color:"#1a9657"}}>
+                        Agents
+                            </h4>
+                          <p className="m-0 text-sm">
+                          Diversify your campus by attracting qualified students from countries around the world.
+                            </p>
+                        </div>
+                        <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
+                          <a>Read More &#43;</a>
+                        </div>
                       </div>
-                    </div>
-                    <div className="features-tiles-item-content">
-                      <h4 className="mt-0 mb-8" style={{color:"#1a9657"}}>
-                    Agents
-                        </h4>
-                      <p className="m-0 text-sm">
-                      Diversify your campus by attracting qualified students from countries around the world.
-                        </p>
-                    </div>
-                    <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
-                      <a>Read More &#43;</a>
-                    </div>
-                  </div>
-                </Card>
-              </Fade>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-              <Fade bottom>
-                <Card className={classes.root}>
-                  <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px',padding: '0 20px 0 20px'}}>
-                    <div className="features-tiles-item-header">
-                      <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'160px',maxHeight:'160px'}}>
-                        <Image
-                          src={require('./../../assets/images/student.svg')}
-                          alt="Features tile icon 02"
-                          width={164}
-                          height={24} />
+                    </Card>
+                  </Fade>
+                </div>
+              </Grid>
+              <Grid item lg={3} md={6} sm={6} xs={12}>
+                <div data-reveal-delay="200">
+                  <Fade left>
+                    <Card className={classes.root}>
+                      <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px',padding: '0 5px 0 5px'}}>
+                        <div className="features-tiles-item-header">
+                          <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'90px',maxHeight:'90px'}}>
+                            <Image
+                              src={require('./../../assets/images/student.svg')}
+                              alt="Features tile icon 02"
+                              width={90}
+                              height={100} />
+                          </div>
+                        </div>
+                        <div className="features-tiles-item-content">
+                          <h4 className="mt-0 mb-8" style={{color:"#1a9657"}}>
+                          Students 
+                            </h4>
+                          <p className="m-0 text-sm">
+                          Get matched and apply to programs and schools that align with your background, skills, and interests.
+                            </p>
+                        </div>
+                        <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
+                          <a>Read More &#43;</a>
+                        </div>
                       </div>
-                    </div>
-                    <div className="features-tiles-item-content">
-                      <h4 className="mt-0 mb-8" style={{color:"#1a9657"}}>
-                      Students 
-                        </h4>
-                      <p className="m-0 text-sm">
-                      Get matched and apply to programs and schools that align with your background, skills, and interests.
-                        </p>
-                    </div>
-                    <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
-                      <a>Read More &#43;</a>
-                    </div>
-                  </div>
-                </Card>
-              </Fade>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-            <Fade right>
-                <Card className={classes.root}>
-                  <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px',padding: '0 20px 0 20px'}}>
-                    <div className="features-tiles-item-header">
-                      <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'160px',maxHeight:'160px'}}>
-                        <Image
-                          src={require('./../../assets/images/university.png')}
-                          alt="Features tile icon 03"
-                          width={164}
-                          height={164} />
+                    </Card>
+                  </Fade>
+                </div>
+              </Grid>
+              <Grid item lg={3} md={6} sm={6} xs={12}>
+                <div data-reveal-delay="200">
+                <Fade right>
+                    <Card className={classes.root}>
+                      <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px',padding: '0 5px 0 5px'}}>
+                        <div className="features-tiles-item-header">
+                          <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'90px',maxHeight:'90px'}}>
+                            <Image
+                              src={require('./../../assets/images/university.png')}
+                              alt="Features tile icon 03"
+                              width={90}
+                              height={100} />
+                          </div>
+                        </div>
+                        <div className="features-tiles-item-content">
+                          <h4 className="mt-0 mb-8" style={{color:"#1a9657"}}>
+                          Institutes
+                            </h4>
+                          <p className="m-0 text-sm">
+                          Give your students the best chance for success with access to 1,500+ educational institutions.
+                            </p>
+                        </div>
+                        <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
+                          <a>Read More &#43;</a>
+                        </div>
                       </div>
-                    </div>
-                    <div className="features-tiles-item-content">
-                      <h4 className="mt-0 mb-8" style={{color:"#1a9657"}}>
-                      Institutes
-                        </h4>
-                      <p className="m-0 text-sm">
-                      Give your students the best chance for success with access to 1,500+ educational institutions.
-                        </p>
-                    </div>
-                    <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
-                      <a>Read More &#43;</a>
-                    </div>
-                  </div>
-                </Card>
-              </Fade>
-            </div>
+                    </Card>
+                  </Fade>
+                </div>
+              </Grid>
+              <Grid item lg={3} md={6} sm={6} xs={12}>
+                <div data-reveal-delay="200">
+                <Fade right>
+                    <Card className={classes.root}>
+                      <div className="tiles-item-inner" style={{marginTop:'20px',marginBottom:'20px',padding: '0 5px 0 5px'}}>
+                        <div className="features-tiles-item-header">
+                          <div className="features-tiles-item-image mb-16" style={{backgroundColor:"inherit",maxWidth:'90px',maxHeight:'90px'}}>
+                            <Image
+                              src={require('./../../assets/images/university.png')}
+                              alt="Features tile icon 03"
+                              width={90}
+                              height={100} />
+                          </div>
+                        </div>
+                        <div className="features-tiles-item-content">
+                          <h4 className="mt-0 mb-8" style={{color:"#1a9657"}}>
+                          Institutes
+                            </h4>
+                          <p className="m-0 text-sm">
+                          Give your students the best chance for success with access to 1,500+ educational institutions.
+                            </p>
+                        </div>
+                        <div style={{color:"#1a9657",paddingTop: "20px", paddingBottom: "20px"}}>
+                          <a>Read More &#43;</a>
+                        </div>
+                      </div>
+                    </Card>
+                  </Fade>
+                </div>
+              </Grid>
+            </Grid>
           </div>
         </div>
       </div>

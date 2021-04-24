@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {useEffect, useState} from "react";
 import { Provider } from "react-redux";
 
 import Filter from "./components/Filter";
@@ -16,15 +16,23 @@ import Button from '@material-ui/core/Button';
 import {Link} from 'react-scroll';
 import SimpleAccordion from './UniAccordions/AccordionCN'
 
-class UniCanada extends Component {
-  render() {
+function UniCanada () {
+  
     const sectionHeader = {
       title: 'Study in Canada',
     };
+    const [offsetY, setOffsetY]= useState(0);
+    const handleScroll = ()=> setOffsetY(window.pageYOffset);
     
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+    
+      return() => window.removeEventListener("scroll", handleScroll); 
+    },[]);
+
     return (
       <>
-       <div className="HeroCarousel">
+       <div className="HeroCarousel" style={{transform:`translateY(${offsetY * -0.6}px)`, overflow:"hidden!important"}}>
         <HeroCarousel >
           <img
             style={{
@@ -38,14 +46,7 @@ class UniCanada extends Component {
           />
           
         </HeroCarousel>
-      <div className=""></div>
-
-  </div>
-      <Provider store={store}>
-        <div className="container">
-         
-       
-          <div style={{textShadow:"1px 1px rgba(0,0,0,0.3)"}} id = "overlay" className='sec_hdr_container'>  
+        <div style={{textShadow:"1px 1px rgba(0,0,0,0.3)"}} id = "overlay" className='sec_hdr_container'>  
             <SectionHeader data={sectionHeader} className="padding-top-section-header center-content" />
             <div id = "overlay" className='sec_btn_container' style={{display:"flex",flexDirection:"column",verticalAlign:"center"}}>
               <div style={{padding:"0 30px 0 30px",width:"100%"}}>
@@ -70,6 +71,13 @@ class UniCanada extends Component {
                   </Button>
             </div>
           </div>
+          
+  </div>
+      <Provider store={store}>
+        <div className="container">
+         
+       
+         
           <div>
            <Products/>
            <SimpleAccordion/>
@@ -83,6 +91,6 @@ class UniCanada extends Component {
       </>
     );
   }
-}
+
 
 export default UniCanada;

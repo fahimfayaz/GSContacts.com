@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {useEffect, useState} from "react";
 import { Provider } from "react-redux";
 import SectionHeader from './components/sections/partials/SectionHeader';
 import Filter from "./components/Filter";
@@ -14,16 +14,23 @@ import HeroCarousel from "react-hero-carousel";
 import Button from '@material-ui/core/Button';
 import {Link} from 'react-scroll';
 import SimpleAccordion from './UniAccordions/AccordionUSA'
-class UniAmerica extends Component {  
-  render() {
+ function UniAmerica () {
     const sectionHeader = {
       title: 'Study in America',
       paragraph: ' '
     };
-  
+    const [offsetY, setOffsetY]= useState(0);
+    const handleScroll = ()=> setOffsetY(window.pageYOffset);
+    
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+    
+      return() => window.removeEventListener("scroll", handleScroll); 
+    },[]);
+
     return (
       <>
-       <div className="HeroCarousel">
+       <div className="HeroCarousel" style={{transform:`translateY(${offsetY * -0.6}px)`, overflow:"hidden!important"}}>
    <HeroCarousel >
      <img
       style={{
@@ -78,6 +85,6 @@ class UniAmerica extends Component {
       </>
     );
   }
-}
+
 
 export default UniAmerica;
