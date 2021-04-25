@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {useEffect, useState} from "react";
 import { Provider } from "react-redux";
 import Products from "./components/Products";
 import Filter from "./components/Filter";
@@ -10,30 +10,38 @@ import Copyright from "./components/Copyright";
 import FeaturesTiles from "./components/sections/FeaturesTilesAboutus";
 import FeaturesSplit from "./components/sections/FeaturesSplitAboutus";
 import HeroCarousel from "react-hero-carousel";
-class Aboutus extends Component {
-  render() {
+function Aboutus () {
+  const [offsetY, setOffsetY]= useState(0);
+  const handleScroll = ()=> setOffsetY(window.pageYOffset);
+  
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  
+    return() => window.removeEventListener("scroll", handleScroll); 
+    },[]);
+
     return (
       <>
-      <div  className="HeroCarousel">
-   <HeroCarousel >
+      <div className="HeroCarousel" style={{transform:`translateY(${offsetY * -0.6}px)`}}>
+   <HeroCarousel>
      <img
       style={{
         width: "100%",
-        height: "500px",
+        height: "100%",
         objectFit: "cover",
       }}
       src="https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1618555755/img3_f7yyzn.jpg"
       width="100%"
-      height="500px"
+      height="100%"
     />
     
   </HeroCarousel>
   </div>
-  <div id = "overlay">  
+  <div id = "overlay" style={{transform:`translateY(${offsetY * -0.6}px)`}}>  
   <Hero className="illustration-section-01" />
   </div>
       <Provider store={store}>
-        <div  className=" padding-top container">
+        <div id="header" className=" padding-top container" style={{transform:`translateY(${offsetY * 0.0}px)`}}>
          
        
           
@@ -50,6 +58,5 @@ class Aboutus extends Component {
       </>
     );
   }
-}
-
+      
 export default Aboutus;
